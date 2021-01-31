@@ -1,0 +1,384 @@
+﻿{
+  "products": [
+    {
+      "product_id": 1,
+      "product_name": "Lebron 18 Black/Electric Green",
+      "sold_out": false,
+      "price": 200,
+      "num_of_colors": 4,
+      "image_url": "./product/lebron_18_black_electric_green_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 1
+    },
+    {
+      "product_id": 2,
+      "product_name": "Kyrie 7 Rayguns",
+      "sold_out": false,
+      "price": 130,
+      "num_of_colors": 4,
+      "image_url": "./product/kyrie_7_rayguns_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 1
+    },
+    {
+      "product_id": 3,
+      "product_name": "Nike Vapor Edge Elite 360 OBJ",
+      "sold_out": false,
+      "price": 170.97,
+      "num_of_colors": 1,
+      "image_url": "/product/nike_vapor_edge_elite_360_obj_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 2
+    },
+    {
+      "product_id": 4,
+      "product_name": "Nike Alpha Menace Pro 2 Mid By You",
+      "sold_out": false,
+      "price": 120,
+      "num_of_colors": 6,
+      "image_url": "./product/nike_alpha_menace_pro_2_mid_by_you_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 2
+    },
+    {
+      "product_id": 5,
+      "product_name": "Nike Mercurial Superfly 8 Elite FG",
+      "sold_out": false,
+      "price": 275,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_mecurial_superfly_8_elite_fg_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 3
+    },
+    {
+      "product_id": 6,
+      "product_name": "Nike Phantom Scorpion Elite Dynamic Fit FG",
+      "sold_out": false,
+      "price": 265.97,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_phantom_corpion_elite_dynamic_fig_fg_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 3
+    },
+    {
+      "product_id": 7,
+      "product_name": "NikeCourt Zoom Vapor X Air Max 95",
+      "sold_out": false,
+      "price": 123.97,
+      "num_of_colors": 2,
+      "image_url": "./product/nikecourt_zoom_vapor_x_air_max_95_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 4
+    },
+    {
+      "product_id": 8,
+      "product_name": "NikeCourt Air Zoom GP Turbo",
+      "sold_out": false,
+      "price": 126.97,
+      "num_of_colors": 5,
+      "image_url": "./product/nikecourt_air_zoom_gp_turbo_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 4
+    },
+    {
+      "product_id": 9,
+      "product_name": "Nike Alpha Huarache Elite 3 Low",
+      "sold_out": false,
+      "price": 90,
+      "num_of_colors": 6,
+      "image_url": "./product/nike_alpha_huarache_elite_3_low_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 5
+    },
+    {
+      "product_id": 10,
+      "product_name": "Nike Force Zoom Trout 7 Turf",
+      "sold_out": false,
+      "price": 120,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_force_zoom_trout_7_turf_main.jpg",
+      "parent_category_id": 1,
+      "category_id": 5
+    },
+    {
+      "product_id": 11,
+      "product_name": "Nike Dri-FIT Lebron King Me",
+      "sold_out": false,
+      "price": 35,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_drifit_lebron_king_me_main.jpg",
+      "parent_category_id": 2,
+      "category_id": 1
+    },
+    {
+      "product_id": 12,
+      "product_name": "Nike rayguns",
+      "sold_out": false,
+      "price": 45,
+      "num_of_colors": 2,
+      "image_url": "./product/Nike_rayguns_main.jpg",
+      "parent_category_id": 2,
+      "category_id": 1
+    },
+    {
+      "product_id": 13,
+      "product_name": "Nike Dri-FIT UV Vapor",
+      "sold_out": false,
+      "price": 65,
+      "num_of_colors": 3,
+      "image_url": "./product/nike_drifit_uv_vapor_main.jpg",
+      "parent_category_id": 2,
+      "category_id": 2
+    },
+    {
+      "product_id": 14,
+      "product_name": "Jordan Jumpman Air",
+      "sold_out": false,
+      "price": 45.97,
+      "num_of_colors": 3,
+      "image_url": "./product/_main.jpg",
+      "parent_category_id": 2,
+      "category_id": 2
+    },
+    {
+      "product_id": 15,
+      "product_name": "Nike Dri-FIT",
+      "sold_out": false,
+      "price": 40,
+      "num_of_colors": 3,
+      "image_url": "./product/_main.jpg",
+      "parent_category_id": 2,
+      "category_id": 3
+    },
+    {
+      "product_id": 16,
+      "product_name": "Nikola Jokic Nuggets Icon Edition 2020",
+      "sold_out": false,
+      "price": 110,
+      "num_of_colors": 2,
+      "image_url": "./product/nikola_jokic_nuggets_icon_edtion_2020_main.jpg",
+      "parent_category_id": 2,
+      "category_id": 3
+    },
+    {
+      "product_id": 17,
+      "product_name": "Nike Sportswear Tech Fleece",
+      "sold_out": false,
+      "price": 100,
+      "num_of_colors": 11,
+      "image_url": "./product/nike_sportswear_tech_fleece_main.jpg",
+      "parent_category_id": 3,
+      "category_id": 1
+    },
+    {
+      "product_id": 18,
+      "product_name": "Nike sportswear essential",
+      "sold_out": false,
+      "price": 65,
+      "num_of_colors": 5,
+      "image_url": "./product/_main.jpg",
+      "parent_category_id": 3,
+      "category_id": 1
+    },
+    {
+      "product_id": 19,
+      "product_name": "Nike Sportswear Swoosh",
+      "sold_out": false,
+      "price": 85,
+      "num_of_colors": 8,
+      "image_url": "./product/nike_sportswear_swoosh_main.jpg",
+      "parent_category_id": 3,
+      "category_id": 1
+    },
+    {
+      "product_id": 20,
+      "product_name": "Nike Sportswear Icon Clash",
+      "sold_out": false,
+      "price": 65,
+      "num_of_colors": 3,
+      "image_url": "./product/nike_sportswear_icon_clash_main.jpg",
+      "parent_category_id": 3,
+      "category_id": 1
+    },
+    {
+      "product_id": 21,
+      "product_name": "Nike Epic Luxe",
+      "sold_out": false,
+      "price": 90,
+      "num_of_colors": 3,
+      "image_url": "./product/nike_epic_luxe_main.jpg",
+      "parent_category_id": 3,
+      "category_id": 2
+    },
+    {
+      "product_id": 22,
+      "product_name": "Nike Yoga Luxe",
+      "sold_out": false,
+      "price": 90,
+      "num_of_colors": 11,
+      "image_url": "./product/nike_yoga_luxe_main.jpg",
+      "parent_category_id": 3,
+      "category_id": 2
+    },
+    {
+      "product_id": 23,
+      "product_name": "Mens Square Leg Swim Jammer",
+      "sold_out": false,
+      "price": 50,
+      "num_of_colors": 3,
+      "image_url": "./product/mens_squae_leg_swim_jammer_main.jpg",
+      "parent_category_id":4,
+      "category_id":1
+    },
+    {
+      "product_id": 24,
+      "product_name": "Women's Cheecky Swim Bottom",
+      "sold_out": false,
+      "price": 40,
+      "num_of_colors": 1,
+      "image_url": "./product/womens_cheecky_swim_bottom_main.jpg",
+      "parent_category_id":4,
+      "category_id":1
+    },
+    {
+      "product_id": 25,
+      "product_name": "Women's Scoop Neck Midkini Swim Top",
+      "sold_out": false,
+      "price": 52,
+      "num_of_colors": 1,
+      "image_url": "./product/womens_scoop_neck_midkini_swim_top_main.jpg",
+      "parent_category_id":4,
+      "category_id":2
+    },
+    {
+      "product_id": 26,
+      "product_name": "Women's Long_Sleeve Hydroguard",
+      "sold_out": false,
+      "price": 50,
+      "num_of_colors": 2,
+      "image_url": "./product/womens_long_sleeve_hydroguardp_main.jpg",
+      "parent_category_id":4,
+      "category_id":2
+    },
+    {
+      "product_id": 27,
+      "product_name": "Women's Camo Swim Bikini Top",
+      "sold_out": false,
+      "price": 48,
+      "num_of_colors": 1,
+      "image_url": "./product/womens_camo_swim_bikini_top_main.jpg",
+      "parent_category_id":4,
+      "category_id":2
+    },
+    {
+      "product_id": 28,
+      "product_name": "Nike Sportswear Heritage",
+      "sold_out": false,
+      "price": 60,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_sportswear_heritage_main.jpg",
+      "parent_category_id":5,
+      "category_id":1
+    },
+    {
+      "product_id": 29,
+      "product_name": "Nike Tech",
+      "sold_out": false,
+      "price": 45,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_tech_main.jpg",
+      "parent_category_id":5,
+      "category_id":1
+    },
+    {
+      "product_id": 30,
+      "product_name": "Nike Heritage 2.0",
+      "sold_out": false,
+      "price": 30,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_heritage_2.0_main.jpg",
+      "parent_category_id":5,
+      "category_id":1
+    },
+    {
+      "product_id": 31,
+      "product_name": "U.S Skills",
+      "sold_out": false,
+      "price": 12,
+      "num_of_colors": 1,
+      "image_url": "./product/u.s_skills_main.jpg",
+      "parent_category_id":5,
+      "category_id":2
+    },
+    {
+      "product_id": 32,
+      "product_name": "Nike Flight",
+      "sold_out": false,
+      "price": 160,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_flight_main.jpg",
+      "parent_category_id":5,
+      "category_id":2
+    },
+    {
+      "product_id": 33,
+      "product_name": "Lebron Skills",
+      "sold_out": false,
+      "price": 13.97,
+      "num_of_colors": 3,
+      "image_url": "./product/lebron_skills_main.jpg",
+      "parent_category_id":5,
+      "category_id":2
+    },
+    {
+      "product_id": 34,
+      "product_name": "Nike College(Oregon)",
+      "sold_out": false,
+      "price": 15,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_college_main.jpg",
+      "parent_category_id":5,
+      "category_id":2
+    },
+    {
+      "product_id": 35,
+      "product_name": "Nike tech Fleece Gloves",
+      "sold_out": false,
+      "price": 35,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_tech_fleece_gloves_main.jpg",
+      "parent_category_id":5,
+      "category_id":3
+    },
+    {
+      "product_id": 30,
+      "product_name": "Nike Vapor Pro Gloves",
+      "sold_out": false,
+      "price": 140,
+      "num_of_colors": 2,
+      "image_url": "./product/nike_vapor_pro_gloves_main.jpg",
+      "parent_category_id":5,
+      "category_id":3
+    },
+    {
+      "product_id": 36,
+      "product_name": "Nike Alpha Huarache Edge",
+      "sold_out": false,
+      "price": 25,
+      "num_of_colors": 3,
+      "image_url": "./product/nike_alpha_hyarache_edge_main.jpg",
+      "parent_category_id":5,
+      "category_id":3
+    },
+    {
+      "product_id": 37,
+      "product_name": "Nike Tour Classic 3",
+      "sold_out": false,
+      "price": 23,
+      "num_of_colors": 1,
+      "image_url": "./product/nike_tour_classic_3_main.jpg",
+      "parent_category_id":5,
+      "category_id":3
+    }
+  ]
+}
