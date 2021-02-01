@@ -1,6 +1,6 @@
 export class Product
 {
-    constructor() { }
+    constructor(product_id, product_name, sold_out, price, num_of_colors, image_url, parent_category_id, category_id) { }
 
     public product_id?: number;
     public product_name: string;

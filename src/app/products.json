@@ -351,7 +351,7 @@
       "category_id":3
     },
     {
-      "product_id": 30,
+      "product_id": 36,
       "product_name": "Nike Vapor Pro Gloves",
       "sold_out": false,
       "price": 140,
@@ -361,7 +361,7 @@
       "category_id":3
     },
     {
-      "product_id": 36,
+      "product_id": 37,
       "product_name": "Nike Alpha Huarache Edge",
       "sold_out": false,
       "price": 25,
@@ -371,7 +371,7 @@
       "category_id":3
     },
     {
-      "product_id": 37,
+      "product_id": 38,
       "product_name": "Nike Tour Classic 3",
       "sold_out": false,
       "price": 23,
