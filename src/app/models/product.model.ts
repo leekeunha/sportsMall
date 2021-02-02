@@ -1,13 +1,13 @@
 export class Product
 {
-    constructor() { }
+    constructor(productId, productName, soldOut, price, numOfColors, imageUrl, parentCategoryId, categoryId) { }
 
-    public product_id?: number;
-    public product_name: string;
-    public sold_out: boolean;
+    public productId?: number;
+    public productName: string;
+    public soldOut: boolean;
     public price: number;
-    public num_of_colors: number;
-    public image_url: string;
-    public parent_category_id: number;
-    public category_id: number;
+    public numOfColors: number;
+    public imageUrl: string;
+    public parentCategoryId: number;
+    public categoryId: number;
 }

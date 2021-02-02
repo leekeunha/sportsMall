@@ -2,6 +2,6 @@ export class Category
 {
     constructor() { }
 
-    public category_id?: number;
-    public category_name: string;
+    public categoryId?: number;
+    public categoryName: string;
 }
