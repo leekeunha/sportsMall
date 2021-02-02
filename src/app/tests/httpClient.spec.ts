@@ -6,7 +6,7 @@ import { HttpClient } from '../client/httpClient';
 
 describe("HttpClient Test Environment", () => {
     it("should return a list of products JSON objects", () => {
-        let httpClient: HttpClient = new HttpClient();
+        const httpClient: HttpClient = new HttpClient();
         expect(httpClient.getProducts()).toEqual(jasmine.arrayContaining([{
             "productId": 32,
             "productName": "Nike Flight",
@@ -21,7 +21,7 @@ describe("HttpClient Test Environment", () => {
         ));
     });
     it("should return parent categories list of products JSON objects", () => {
-        let httpClient: HttpClient = new HttpClient();
+        const httpClient: HttpClient = new HttpClient();
         expect(httpClient.getParentCategories()).toEqual(jasmine.arrayContaining([{
             "id": 1,
             "name": "Shoes",
@@ -51,13 +51,13 @@ describe("HttpClient Test Environment", () => {
     });
 
     it("should return a products by id JSON object", () => {
-        let httpClient: HttpClient = new HttpClient();
+        const httpClient: HttpClient = new HttpClient();
         expect(httpClient.getProductById(1)).toEqual({ productId: 1, productName: 'Lebron 18 Black/Electric Green', soldOut: false, price: 200, numOfColors: 4, imageUrl: './product/lebron_18_black_electric_green_main.jpg', parentCategoryId: 1, categoryId: 1 });
     });
 
     it("should return parent categories by parentCategoryId JSON objects", () => {
-        let httpClient: HttpClient = new HttpClient();
-        let productList: Product[] = httpClient.getProducts();
+        const httpClient: HttpClient = new HttpClient();
+        const productList: Product[] = httpClient.getProducts();
 
         console.log(httpClient.filterByParentCategoryId(productList, 1));
         expect(httpClient.filterByParentCategoryId(productList, 1)).toEqual(jasmine.arrayContaining(
@@ -74,12 +74,12 @@ describe("HttpClient Test Environment", () => {
         }]));
     });
     it("should return a product by name JSON objects", () => {
-        let httpClient: HttpClient = new HttpClient();
-        let productList: Product[] = httpClient.getProducts();
+        const httpClient: HttpClient = new HttpClient();
+        const productList: Product[] = httpClient.getProducts();
         expect(httpClient.filterByName(productList, "Kyrie 7 Rayguns").productId).toBe(2);
     });
     it("should return products with price range of 250 to 300 JSON objects", () => {
-        let httpClient: HttpClient = new HttpClient();
+        const httpClient: HttpClient = new HttpClient();
         let productList: Product[] = httpClient.getProducts();
         expect(httpClient.filterByPriceRange(productList, 250, 300)).toEqual(jasmine.arrayContaining(
             [
