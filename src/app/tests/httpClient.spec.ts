@@ -2,7 +2,9 @@ import { TestBed, ComponentFixture } from "@angular/core/testing";
 import { Product } from "../models/product.model";
 import { Category } from "../models/category.model";
 import { ParentCategory } from "../models/parentCategory.model";
+
 import { Home } from '../models/home.model';
+
 import { HttpClient } from '../client/httpClient';
 
 describe("HttpClient Test Environment", () => {
@@ -83,6 +85,7 @@ describe("HttpClient Test Environment", () => {
 
     it("should return products with price range of 250 to 300 JSON objects", () => {
         const httpClient: HttpClient = new HttpClient();
+        let productList: Product[] = httpClient.getProducts();
         const productList: Product[] = httpClient.getProducts();
         expect(httpClient.filterByPriceRange(productList, 250, 300)).toEqual(jasmine.arrayContaining(
             [
