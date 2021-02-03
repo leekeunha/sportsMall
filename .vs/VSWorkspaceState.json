@@ -5,8 +5,11 @@
     "\\src\\app",
     "\\src\\app\\client",
     "\\src\\app\\client\\fixture",
-    "\\src\\app\\tests"
+    "\\src\\app\\models",
+    "\\src\\app\\tests",
+    "\\src\\assets",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\client\\httpClient.ts",
+  "SelectedNode": "\\src\\app\\client\\fixture\\products.json",
   "PreviewInSolutionExplorer": false
 }
