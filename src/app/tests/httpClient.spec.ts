@@ -1,7 +1,10 @@
 import { TestBed, ComponentFixture } from "@angular/core/testing";
+
 import { Product } from "../models/product.model";
 import { Category } from "../models/category.model";
 import { ParentCategory } from "../models/parentCategory.model";
+import { Home } from '../models/home.model';
+
 import { HttpClient } from '../client/httpClient';
 
 describe("HttpClient Test Environment", () => {
@@ -73,14 +76,16 @@ describe("HttpClient Test Environment", () => {
                 "categoryId": 2
         }]));
     });
+
     it("should return a product by name JSON objects", () => {
         const httpClient: HttpClient = new HttpClient();
         const productList: Product[] = httpClient.getProducts();
         expect(httpClient.filterByName(productList, "Kyrie 7 Rayguns").productId).toBe(2);
     });
+
     it("should return products with price range of 250 to 300 JSON objects", () => {
         const httpClient: HttpClient = new HttpClient();
-        let productList: Product[] = httpClient.getProducts();
+        const productList: Product[] = httpClient.getProducts();
         expect(httpClient.filterByPriceRange(productList, 250, 300)).toEqual(jasmine.arrayContaining(
             [
                 {
@@ -94,5 +99,16 @@ describe("HttpClient Test Environment", () => {
                     "categoryId": 3
                 }
             ]));
+    });
+
+    it("should return home JSON objects", () => {
+        const httpClient: HttpClient = new HttpClient();
+        const home: Home = httpClient.getHome();
+        expect(home.bannerImageList).toEqual(jasmine.arrayContaining(
+        ["./home/banner/nike_space_hippie_04",
+        ]));
+        expect(home.latestImageList).toEqual(jasmine.arrayContaining(
+        ["./home/latest/nike_air_jordan_1_low"
+        ]));
     });
 });
