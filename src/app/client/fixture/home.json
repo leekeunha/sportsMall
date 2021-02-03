@@ -1,0 +1,18 @@
+{
+  "bannerImageList": [
+    "./home/banner/nike_space_hippie_04",
+    "./home/banner/nike_blazer_mid_77_vintage",
+    "./home/banner/nike_blazer_low_se_banner"
+  ],
+  "latestImageList": [
+    "./home/latest/nike_air_jordan_1_low",
+    "./home/latest/nike_jordan_retro_10_mcs",
+    "./home/latest/nike_jordan_one_take_2",
+    "./home/latest/nike_react_escape_run",
+    "./home/latest/nike_quest_3",
+    "./home/latest/nike_zoom_span_3",
+    "./home/latest/nike_fontanka_edge",
+    "./home/latest/nike_air_force_1_creater",
+    "./home/latest/nike_sportswear_windrunner"
+  ]
+}
