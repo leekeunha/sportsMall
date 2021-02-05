@@ -3,6 +3,8 @@ import { ParentCategory } from '../models/parentCategory.model';
 import { Product } from '../models/product.model';
 import * as productsData from './fixture/products.json';
 import * as categoriesData from './fixture/categories.json';
+import * as homeData from './fixture/home.json';
+import { Home } from '../models/home.model';
 
 @Injectable()
 export class HttpClient {
@@ -40,5 +42,15 @@ export class HttpClient {
              return p.price >= minValue && p.price <= maxValue
         });
     }
+
+    getHome(): Home {
+
+        const home: Home = new Home();
+        home.bannerImageList = homeData.bannerImageList;
+        home.latestGarmentList = homeData.latestGarmentList;
+
+        return home;
+    }
+
 
 };

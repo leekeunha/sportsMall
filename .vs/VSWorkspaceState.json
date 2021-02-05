@@ -3,8 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\models"
+    "\\src\\app\\client",
+    "\\src\\app\\client\\fixture",
+    "\\src\\app\\models",
+    "\\src\\app\\tests",
+    "\\src\\assets",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\models\\category.model.ts",
+  "SelectedNode": "\\src\\app\\tests\\httpClient.spec.ts",
   "PreviewInSolutionExplorer": false
 }
