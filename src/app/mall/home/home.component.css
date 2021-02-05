@@ -1,0 +1,6 @@
+.main-nav{
+    display:flex;
+    font-size:1.25rem;
+    margin:0 auto;
+    list-style:none;
+}
