@@ -47,7 +47,7 @@ export class HttpClient {
 
         const home: Home = new Home();
         home.bannerImageList = homeData.bannerImageList;
-        home.latestImageList = homeData.latestImageList;
+        home.latestGarmentList = homeData.latestGarmentList;
 
         return home;
     }

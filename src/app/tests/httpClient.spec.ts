@@ -99,14 +99,26 @@ describe("HttpClient Test Environment", () => {
             ]));
     });
 
-    it("should return home JSON objects", () => {
+    it("should return the home JSON object", () => {
         const httpClient: HttpClient = new HttpClient();
         const home: Home = httpClient.getHome();
         expect(home.bannerImageList).toEqual(jasmine.arrayContaining(
-        ["./home/banner/nike_space_hippie_04",
+            [{
+                "imageUrl": "./home/banner/lebron_18_black_electric_green_banner.jpg",
+                "redirectUrl": "/product_detail/1"
+            }
         ]));
-        expect(home.latestImageList).toEqual(jasmine.arrayContaining(
-        ["./home/latest/nike_air_jordan_1_low"
+        expect(home.latestGarmentList).toEqual(jasmine.arrayContaining(
+            [{
+                "productId": 31,
+                "productName": "U.S Skills",
+                "soldOut": false,
+                "price": 12,
+                "numOfColors": 1,
+                "imageUrl": "./product/u.nike_vapor_edge_elite_360_obj_banner.jpg",
+                "parentCategoryId": 5,
+                "categoryId": 2
+            }
         ]));
     });
 });
