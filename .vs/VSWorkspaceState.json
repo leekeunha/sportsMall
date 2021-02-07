@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\client",
-    "\\src\\app\\client\\fixture",
-    "\\src\\app\\models",
-    "\\src\\app\\tests",
+    "\\src\\app\\mall",
+    "\\src\\app\\mall\\appfooter",
+    "\\src\\app\\mall\\appheader",
+    "\\src\\app\\mall\\categories",
+    "\\src\\app\\mall\\home",
     "\\src\\assets",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\tests\\httpClient.spec.ts",
+  "SelectedNode": "\\src\\app\\mall\\appheader\\appHeader.component.html",
   "PreviewInSolutionExplorer": false
 }

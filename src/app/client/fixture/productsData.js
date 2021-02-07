@@ -1,5 +1,6 @@
-﻿{
-  "products": [
+﻿module.exports = function() {
+  var productsData = {
+   products:[
     {
       "productId": 1,
       "productName": "Lebron 18 Black/Electric Green",
@@ -227,8 +228,8 @@
       "price": 50,
       "numOfColors": 3,
       "imageUrl": "./product/mens_squae_leg_swim_jammer_main.jpg",
-      "parentCategoryId":4,
-      "categoryId":1
+      "parentCategoryId": 4,
+      "categoryId": 1
     },
     {
       "productId": 24,
@@ -237,8 +238,8 @@
       "price": 40,
       "numOfColors": 1,
       "imageUrl": "./product/womens_cheecky_swim_bottom_main.jpg",
-      "parentCategoryId":4,
-      "categoryId":1
+      "parentCategoryId": 4,
+      "categoryId": 1
     },
     {
       "productId": 25,
@@ -247,8 +248,8 @@
       "price": 52,
       "numOfColors": 1,
       "imageUrl": "./product/womens_scoop_neck_midkini_swim_top_main.jpg",
-      "parentCategoryId":4,
-      "categoryId":2
+      "parentCategoryId": 4,
+      "categoryId": 2
     },
     {
       "productId": 26,
@@ -257,8 +258,8 @@
       "price": 50,
       "numOfColors": 2,
       "imageUrl": "./product/womens_long_sleeve_hydroguardp_main.jpg",
-      "parentCategoryId":4,
-      "categoryId":2
+      "parentCategoryId": 4,
+      "categoryId": 2
     },
     {
       "productId": 27,
@@ -267,8 +268,8 @@
       "price": 48,
       "numOfColors": 1,
       "imageUrl": "./product/womens_camo_swim_bikini_top_main.jpg",
-      "parentCategoryId":4,
-      "categoryId":2
+      "parentCategoryId": 4,
+      "categoryId": 2
     },
     {
       "productId": 28,
@@ -277,8 +278,8 @@
       "price": 60,
       "numOfColors": 1,
       "imageUrl": "./product/nike_sportswear_heritage_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":1
+      "parentCategoryId": 5,
+      "categoryId": 1
     },
     {
       "productId": 29,
@@ -287,8 +288,8 @@
       "price": 45,
       "numOfColors": 1,
       "imageUrl": "./product/nike_tech_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":1
+      "parentCategoryId": 5,
+      "categoryId": 1
     },
     {
       "productId": 30,
@@ -297,8 +298,8 @@
       "price": 30,
       "numOfColors": 1,
       "imageUrl": "./product/nike_heritage_2.0_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":1
+      "parentCategoryId": 5,
+      "categoryId": 1
     },
     {
       "productId": 31,
@@ -307,8 +308,8 @@
       "price": 12,
       "numOfColors": 1,
       "imageUrl": "./product/u.s_skills_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":2
+      "parentCategoryId": 5,
+      "categoryId": 2
     },
     {
       "productId": 32,
@@ -317,8 +318,8 @@
       "price": 160,
       "numOfColors": 1,
       "imageUrl": "./product/nike_flight_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":2
+      "parentCategoryId": 5,
+      "categoryId": 2
     },
     {
       "productId": 33,
@@ -327,8 +328,8 @@
       "price": 13.97,
       "numOfColors": 3,
       "imageUrl": "./product/lebron_skills_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":2
+      "parentCategoryId": 5,
+      "categoryId": 2
     },
     {
       "productId": 34,
@@ -337,8 +338,8 @@
       "price": 15,
       "numOfColors": 1,
       "imageUrl": "./product/nike_college_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":2
+      "parentCategoryId": 5,
+      "categoryId": 2
     },
     {
       "productId": 35,
@@ -347,8 +348,8 @@
       "price": 35,
       "numOfColors": 1,
       "imageUrl": "./product/nike_tech_fleece_gloves_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":3
+      "parentCategoryId": 5,
+      "categoryId": 3
     },
     {
       "productId": 36,
@@ -357,8 +358,8 @@
       "price": 140,
       "numOfColors": 2,
       "imageUrl": "./product/nike_vapor_pro_gloves_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":3
+      "parentCategoryId": 5,
+      "categoryId": 3
     },
     {
       "productId": 37,
@@ -367,8 +368,8 @@
       "price": 25,
       "numOfColors": 3,
       "imageUrl": "./product/nike_alpha_hyarache_edge_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":3
+      "parentCategoryId": 5,
+      "categoryId": 3
     },
     {
       "productId": 38,
@@ -377,8 +378,10 @@
       "price": 23,
       "numOfColors": 1,
       "imageUrl": "./product/nike_tour_classic_3_main.jpg",
-      "parentCategoryId":5,
-      "categoryId":3
+      "parentCategoryId": 5,
+      "categoryId": 3
     }
   ]
+  }
+  return productsData
 }

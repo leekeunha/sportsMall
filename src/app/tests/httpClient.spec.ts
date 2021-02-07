@@ -102,7 +102,7 @@ describe("HttpClient Test Environment", () => {
     it("should return the home JSON object", () => {
         const httpClient: HttpClient = new HttpClient();
         const home: Home = httpClient.getHome();
-        expect(home.bannerImageList).toEqual(jasmine.arrayContaining(
+        expect(home.bannerList).toEqual(jasmine.arrayContaining(
             [{
                 "imageUrl": "./home/banner/lebron_18_black_electric_green_banner.jpg",
                 "redirectUrl": "/product_detail/1"

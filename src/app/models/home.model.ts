@@ -4,6 +4,6 @@ import { Banner } from './banner.model';
 export class Home {
     constructor() { }
 
-    public bannerImageList: Banner[];
+    public bannerList: Banner[];
     public latestGarmentList: Product[];
 }
