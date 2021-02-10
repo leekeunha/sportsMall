@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\mall",
-    "\\src\\app\\mall\\appfooter",
-    "\\src\\app\\mall\\appheader",
-    "\\src\\app\\mall\\categories",
-    "\\src\\app\\mall\\home",
+    "\\src\\app\\models",
+    "\\src\\app\\tests",
     "\\src\\assets",
-    "\\src\\environments"
+    "\\src\\assets\\images",
+    "\\src\\assets\\images\\home",
+    "\\src\\assets\\images\\home\\banner"
   ],
-  "SelectedNode": "\\src\\app\\mall\\appheader\\appHeader.component.html",
+  "SelectedNode": "\\src\\app\\client\\fixture\\homeData.js",
   "PreviewInSolutionExplorer": false
 }

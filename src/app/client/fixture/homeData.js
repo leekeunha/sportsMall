@@ -1,113 +1,113 @@
 module.exports = function () {
-  var homeData = {
-    "home": {
-      "bannerList": [
-        {
-          "imageUrl": "./home/banner/lebron_18_black_electric_green_banner.jpg",
-          "redirectUrl": "/product_detail/1"
-        },
-        {
-          "imageUrl": "./home/banner/kyrie_7_rayguns_banner.jpg",
-          "redirectUrl": "/product_detail/2"
-        },
-        {
-          "imageUrl": "./home/banner/nike_vapor_edge_elite_360_obj_banner.jpg",
-          "redirectUrl": "/product_detail/3"
+    var homeData = {
+        "home": {
+            "bannerList": [
+                {
+                    "imageUrl": "/assets/images/home/banner/n.png",
+                    "redirectUrl": "/product_detail/1"
+                },
+                {
+                    "imageUrl": "/assets/images/home/banner/nike_air_max_2090_eoi.jpg",
+                    "redirectUrl": "/product_detail/2"
+                },
+                {
+                    "imageUrl": "/assets/images/home/banner/nike_react_finitiry_run_flyknit_2.jpg",
+                    "redirectUrl": "/product_detail/3"
+                }
+            ],
+            "latestGarmentList": [
+                {
+                    "productId": 39,
+                    "productName": "Nike Blazer Mid 77",
+                    "soldOut": false,
+                    "price": 120,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.jpg",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 40,
+                    "productName": "Nike Air Vapormax 2020 FlyKnit",
+                    "soldOut": false,
+                    "price": 220,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Vapormax_2020_FlyKnit_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 41,
+                    "productName": "Nike Air Force 1 Shadow SE",
+                    "soldOut": false,
+                    "price": 120,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_ Shadow_SE_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 42,
+                    "productName": "Nike Air Force 1",
+                    "soldOut": false,
+                    "price": 100,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 43,
+                    "productName": "LeBron 18",
+                    "soldOut": false,
+                    "price": 200,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/LeBron_18_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 44,
+                    "productName": "Nike Air Zoom SuperRep 2",
+                    "soldOut": false,
+                    "price": 120,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 45,
+                    "productName": "Nike Metcon Sport",
+                    "soldOut": false,
+                    "price": 100,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Metcon_Sport_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 46,
+                    "productName": "Nike ZoomX SuperRep Surge",
+                    "soldOut": false,
+                    "price": 140,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                },
+                {
+                    "productId": 47,
+                    "productName": "Nike React Infinity Run Flyknit 2",
+                    "soldOut": false,
+                    "price": 160,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_React_Infinity_Run_Flyknit_2_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 1
+                }
+            ]
         }
-      ],
-      "latestGarmentList": [
-        {
-          "productId": 30,
-          "productName": "Nike Heritage 2.0",
-          "soldOut": false,
-          "price": 30,
-          "numOfColors": 1,
-          "imageUrl": "./product/kyrie_7_rayguns_banner.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 1
-        },
-        {
-          "productId": 31,
-          "productName": "U.S Skills",
-          "soldOut": false,
-          "price": 12,
-          "numOfColors": 1,
-          "imageUrl": "./product/u.nike_vapor_edge_elite_360_obj_banner.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 2
-        },
-        {
-          "productId": 32,
-          "productName": "Nike Flight",
-          "soldOut": false,
-          "price": 160,
-          "numOfColors": 1,
-          "imageUrl": "./product/nike_flight_main.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 2
-        },
-        {
-          "productId": 33,
-          "productName": "Lebron Skills",
-          "soldOut": false,
-          "price": 13.97,
-          "numOfColors": 3,
-          "imageUrl": "./product/lebron_skills_main.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 2
-        },
-        {
-          "productId": 34,
-          "productName": "Nike College(Oregon)",
-          "soldOut": false,
-          "price": 15,
-          "numOfColors": 1,
-          "imageUrl": "./product/nike_college_main.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 2
-        },
-        {
-          "productId": 35,
-          "productName": "Nike tech Fleece Gloves",
-          "soldOut": false,
-          "price": 35,
-          "numOfColors": 1,
-          "imageUrl": "./product/nike_tech_fleece_gloves_main.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 3
-        },
-        {
-          "productId": 36,
-          "productName": "Nike Vapor Pro Gloves",
-          "soldOut": false,
-          "price": 140,
-          "numOfColors": 2,
-          "imageUrl": "./product/nike_vapor_pro_gloves_main.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 3
-        },
-        {
-          "productId": 37,
-          "productName": "Nike Alpha Huarache Edge",
-          "soldOut": false,
-          "price": 25,
-          "numOfColors": 3,
-          "imageUrl": "./product/nike_alpha_hyarache_edge_main.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 3
-        },
-        {
-          "productId": 38,
-          "productName": "Nike Tour Classic 3",
-          "soldOut": false,
-          "price": 23,
-          "numOfColors": 1,
-          "imageUrl": "./product/nike_tour_classic_3_main.jpg",
-          "parentCategoryId": 5,
-          "categoryId": 3
-        }
-      ]
     }
-  }
-  return homeData
+    return homeData
 }

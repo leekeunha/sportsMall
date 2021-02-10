@@ -6,9 +6,10 @@ import { ModelModule } from './models/model.module';
 import { routing } from './app.routing';
 import { AppHeaderComponent } from './mall/appheader/appHeader.component';
 import { AppFooterComponent } from './mall/appfooter/appFooter.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-    imports: [BrowserModule, ModelModule, HomeModule, routing],
+    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule],
     declarations: [AppComponent, AppHeaderComponent, AppFooterComponent],
     bootstrap: [AppComponent]
 })

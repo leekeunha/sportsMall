@@ -1,11 +1,9 @@
-<div class="container wrapper">
+<div class="login-container wrapper">
     <button class="button">join us</button>|<button class="button">sign in</button>
 </div>
 
-<div class="second-container">
+<div class="second-container wrapper">
     <div class="logo">
-        <button class="button">search</button>
-        <button class="button">J</button>
     </div>
     <nav>
         <ul class="main-nav">
@@ -17,8 +15,8 @@
     </nav>
 
     <div class="button-container">
-        <button class="button">search</button>
-        <button class="button">J</button>
+        <button class="button"><i class="fa fa-search"></i><input class="search-text" type="text" placeholder="search"></button>
+        <button class="button" [disabled]="true"><i class="fa fa-shopping-cart"></i></button>
     </div>
 
 </div>

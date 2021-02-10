@@ -4,3 +4,28 @@
     margin:0 auto;
     list-style:none;
 }
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+body {
+    /*background-color:#fef0f0;*/
+}
+
+ul {
+    padding: 0;
+    width: 1200px;
+    margin: 20px auto;
+    margin-left: 80px
+}
+
+li {
+    display: inline;
+}
+
+.carousel-wrapper {
+    margin: 50px;
+}
