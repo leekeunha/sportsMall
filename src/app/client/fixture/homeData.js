@@ -3,15 +3,15 @@ module.exports = function () {
         "home": {
             "bannerList": [
                 {
-                    "imageUrl": "/assets/images/home/banner/n.png",
+                    "imageUrl": "/assets/images/home/banner/nike_air_force1.png",
                     "redirectUrl": "/product_detail/1"
                 },
                 {
-                    "imageUrl": "/assets/images/home/banner/nike_air_max_2090_eoi.jpg",
+                    "imageUrl": "/assets/images/home/banner/nike_react_finitiry_run_flyknit_2.png",
                     "redirectUrl": "/product_detail/2"
                 },
                 {
-                    "imageUrl": "/assets/images/home/banner/nike_react_finitiry_run_flyknit_2.jpg",
+                    "imageUrl": "/assets/images/home/banner/nike_fc-awf.png",
                     "redirectUrl": "/product_detail/3"
                 }
             ],
@@ -22,7 +22,7 @@ module.exports = function () {
                     "soldOut": false,
                     "price": 120,
                     "numOfColors": 1,
-                    "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.jpg",
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.png",
                     "parentCategoryId": 1,
                     "categoryId": 1
                 },

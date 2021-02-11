@@ -387,7 +387,7 @@
                 "soldOut": false,
                 "price": 120,
                 "numOfColors": 1,
-                "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.jpg",
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.png",
                 "parentCategoryId": 1,
                 "categoryId": 1
             },

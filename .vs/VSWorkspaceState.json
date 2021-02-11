@@ -3,14 +3,16 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\client",
+    "\\src\\app\\client\\fixture",
     "\\src\\app\\mall",
-    "\\src\\app\\models",
-    "\\src\\app\\tests",
+    "\\src\\app\\mall\\home",
     "\\src\\assets",
     "\\src\\assets\\images",
     "\\src\\assets\\images\\home",
-    "\\src\\assets\\images\\home\\banner"
+    "\\src\\assets\\images\\home\\latestGarment",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\client\\fixture\\homeData.js",
+  "SelectedNode": "\\src\\app\\mall\\home\\carouselLatest.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -25,7 +25,6 @@ li span{
     color:dimgrey;
 }
 
-.corporaion{
-    font-size:1.5rem;
-    margin: 20px;
+.corporation p {
+    font-size: 1.5rem;
 }
