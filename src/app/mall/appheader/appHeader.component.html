@@ -1,27 +1,8 @@
 <div class="container bg-light text-right">
-    <button class="button bg-light">join us</button>|<button class="button bg-light">sign in</button>
+    <span class="pr-5">
+        <button class="button bg-light">join us</button>|<button class="button bg-light">sign in</button>
+    </span>
 </div>
-
-
-<!--<div class="second-container wrapper">
-    <div class="logo"></div>
-    <ul ngbNav #nav="ngbNav">
-        <li ngbNavItem>
-            <a ngbNavLink><span class="categories">New Releaes</span></a>
-        </li>
-        <li ngbNavItem>
-            <a ngbNavLink><span class="categories">Men</span></a>
-        </li>
-        <li ngbNavItem>
-            <a ngbNavLink><span class="categories">Women</span></a>
-        </li>
-    </ul>
-    <div [ngbNavOutlet]="nav"></div>
-    <div class="button-container">
-        <button class="button"><i class="fa fa-search"></i><input class="search-text" type="text" placeholder="search"></button>
-        <button class="button" [disabled]="true"><i class="fa fa-shopping-cart"></i></button>
-    </div>
-</div>-->
 <div class="container">
     <div class="row">
         <div class="col-2">
@@ -36,10 +17,10 @@
         <div class="col-7">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <!--<a class="navbar-brand" href="#">Navbar</a>-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                         <div class="navbar-nav text-center h4">
                             <a class="nav-link active" href="#">Shoes</a>
@@ -55,9 +36,13 @@
         <div class="col-3">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchAltMarkup" aria-controls="searchAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="searchAltMarkup">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </div>
                     <button class="button" [disabled]="true"><i class="fa fa-shopping-cart"></i></button>
-                    <!--<button class="btn btn-outline-success" type="submit">Search</button>-->
                 </form>
             </nav>
         </div>
