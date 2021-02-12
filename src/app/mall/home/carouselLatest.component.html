@@ -1,26 +1,29 @@
 <ngb-carousel *ngIf="latestGarmentList">
     <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
-            <div class="grid">
-                <div class="item">
-                    <img [src]="latestGarmentList[0].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[0].productName}}</span>
-                        <span>{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
-                    </div>
+            <div class="row">
+                <div class="col">
+                    <span>
+                        <img [src]="latestGarmentList[0].imageUrl" alt="Random first slide">
+                        <div class="row">
+                            <span class="col">{{latestGarmentList[0].productName}}</span>
+                            <span class="col text-right mr-1 price">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                        </div>
+                    </span>
+                    
                 </div>
-                <div class="item">
+                <div class="col">
                     <img [src]="latestGarmentList[1].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[1].productName}}</span>
-                        <span>{{latestGarmentList[1].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[1].productName}}</span>
+                        <span class="col text-right mr-1 price">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="col">
                     <img [src]="latestGarmentList[2].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[2].productName}}</span>
-                        <span>{{latestGarmentList[2].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[0].productName}}</span>
+                        <span class="col text-right mr-1">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
             </div>
@@ -28,26 +31,26 @@
     </ng-template>
     <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
-            <div class="grid">
-                <div class="item">
+            <div class="row">
+                <div class="col">
                     <img [src]="latestGarmentList[3].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[3].productName}}</span>
-                        <span>{{latestGarmentList[3].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[0].productName}}</span>
+                        <span class="col text-right mr-1">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="col">
                     <img [src]="latestGarmentList[4].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[4].productName}}</span>
-                        <span>{{latestGarmentList[4].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[0].productName}}</span>
+                        <span class="col text-right mr-1">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="col">
                     <img [src]="latestGarmentList[5].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[5].productName}}</span>
-                        <span>{{latestGarmentList[5].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[0].productName}}</span>
+                        <span class="col text-right mr-1">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
             </div>
@@ -55,26 +58,26 @@
     </ng-template>
     <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
-            <div class="grid">
-                <div class="item">
+            <div class="row">
+                <div class="col">
                     <img [src]="latestGarmentList[6].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[6].productName}}</span>
-                        <span>{{latestGarmentList[6].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[0].productName}}</span>
+                        <span class="col text-right mr-1">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="col">
                     <img [src]="latestGarmentList[7].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[7].productName}}</span>
-                        <span>{{latestGarmentList[7].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[0].productName}}</span>
+                        <span class="col text-right mr-1">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="col">
                     <img [src]="latestGarmentList[8].imageUrl" alt="Random first slide">
-                    <div class="flex-container">
-                        <span>{{latestGarmentList[8].productName}}</span>
-                        <span>{{latestGarmentList[8].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+                    <div class="row">
+                        <span class="col">{{latestGarmentList[0].productName}}</span>
+                        <span class="col text-right mr-1">{{latestGarmentList[0].price|currency : "USD" : "symbol" : "1.0-0"}}</span>
                     </div>
                 </div>
             </div>

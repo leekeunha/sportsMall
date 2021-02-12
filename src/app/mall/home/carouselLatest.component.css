@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 
-.swiper-scrollbar {
+/*.swiper-scrollbar {
     width: calc(66.66% - 96px);
     margin: 30px auto 10px;
     height: 4px;
@@ -53,6 +53,10 @@
     height: 5px;
     content: "";
     top: -5px;
-}
+}*/
 
-
+/*@media (max-width: 992px){
+    .price {
+        text-align: left !important;
+    }
+}*/

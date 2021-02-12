@@ -11,7 +11,7 @@ module.exports = function () {
                     "redirectUrl": "/product_detail/2"
                 },
                 {
-                    "imageUrl": "/assets/images/home/banner/nike_fc-awf.png",
+                    "imageUrl": "/assets/images/home/banner/start_a_new_tradition.png",
                     "redirectUrl": "/product_detail/3"
                 }
             ],
