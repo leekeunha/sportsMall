@@ -4,6 +4,7 @@ import { RestDataSource } from '../../models/rest.datasource';
 @Component({
     selector: 'ngbd-carousel-banner',
     templateUrl: './carouselBanner.component.html',
+    styleUrls: ['./carouselBanner.component.css']
 })
 export class NgbdCarouselBanner {
 

@@ -3,20 +3,21 @@
 </div>
 
 <div class="second-container wrapper">
-    <div class="logo">
-    </div>
-    <nav>
-        <ul class="main-nav">
-            <li><a href=""></a>New Releaes</li>
-            <li><a href=""></a>Men</li>
-            <li><a href=""></a>Women</li>
-
-        </ul>
-    </nav>
-
+    <div class="logo"></div>
+    <ul ngbNav #nav="ngbNav">
+        <li ngbNavItem>
+            <a ngbNavLink><span class="categories">New Releaes</span></a>
+        </li>
+        <li ngbNavItem>
+            <a ngbNavLink><span class="categories">Men</span></a>
+        </li>
+        <li ngbNavItem>
+            <a ngbNavLink><span class="categories">Women</span></a>
+        </li>
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
     <div class="button-container">
         <button class="button"><i class="fa fa-search"></i><input class="search-text" type="text" placeholder="search"></button>
         <button class="button" [disabled]="true"><i class="fa fa-shopping-cart"></i></button>
     </div>
-
 </div>

@@ -51,6 +51,4 @@ export class HttpClient {
 
         return home;
     }
-
-
 };
