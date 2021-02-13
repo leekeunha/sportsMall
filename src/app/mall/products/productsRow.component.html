@@ -1,9 +1,11 @@
-<div class="row">
-    <div class="col" *ngFor="let product of productList">
-        <img class="img-fluid" [src]="product.imageUrl" [alt]="product.imageUrl">
-        <div class="row">
-            <span class="col">{{product.productName}}</span>
-            <span class="col text-right mr-1 price">{{product.price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let product of productList">
+            <img class="img-fluid" [src]="product.imageUrl" [alt]="product.imageUrl">
+            <div class="row">
+                <span class="col">{{product.productName}}</span>
+                <span class="col text-right mr-1 price">{{product.price|currency : "USD" : "symbol" : "1.0-0"}}</span>
+            </div>
         </div>
     </div>
 </div>

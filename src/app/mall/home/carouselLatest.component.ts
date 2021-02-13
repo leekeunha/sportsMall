@@ -12,6 +12,7 @@ export class NgbdCarouselLatest {
 
     public latestGarmentList = [];
     public slideList = [];
+    public productsPerSlide = 3;
 
     constructor(private dataSource: RestDataSource) {
         this.dataSource.getHome().subscribe(data => {
@@ -20,26 +21,16 @@ export class NgbdCarouselLatest {
                 this.latestGarmentList[index] = item;
             });
 
-            this.setSlides();
+            this.setSlideProductList();
         });
     }
 
-    setSlides() {
-        this.setEachSlide(0, 3);
-        this.setEachSlide(3, 6);
-        this.setEachSlide(6, 9);
-    }
+    setSlideProductList() {
+        let arrayCopy = [...this.latestGarmentList]
 
-    setEachSlide(startIndex: number, endIndex: number) {
-
-        let latestGarmentList = [];
-        let index = 0;
-
-        for (var i = startIndex; i < endIndex; i++) {
-            latestGarmentList[index] = this.latestGarmentList[i];
-            index++;
+        while (arrayCopy.length > 0) {
+            this.slideList.push(arrayCopy.splice(0, this.productsPerSlide))
         }
-
-        this.slideList.push(latestGarmentList);
     }
+
 }

@@ -1,3 +1,4 @@
-<products-row [model]="productListInCategory"></products-row>
-<products-row [model]="productListInCategory"></products-row>
-<products-row [model]="productListInCategory"></products-row>
+<products-row *ngFor="let rowProductGroup of rowProductGroupList" [model]="rowProductGroup"></products-row>
+<div class="btn-group float-right">
+    <button *ngFor="let page of pageNumbers" (click)="changePage(page)" class="btn btn-outline-primary" [class.active]="page == selectedPage">{{page}}</button>
+</div>

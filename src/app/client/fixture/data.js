@@ -110,184 +110,184 @@ module.exports = function () {
         },
         "productList": [
             {
-                "productId": 1,
-                "productName": "Lebron 18 Black/Electric Green",
-                "soldOut": false,
-                "price": 200,
-                "numOfColors": 4,
-                "imageUrl": "./product/lebron_18_black_electric_green_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 1
-            },
-            {
-                "productId": 2,
-                "productName": "Kyrie 7 Rayguns",
-                "soldOut": false,
-                "price": 130,
-                "numOfColors": 4,
-                "imageUrl": "./product/kyrie_7_rayguns_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 1
-            },
-            {
-                "productId": 3,
-                "productName": "Nike Vapor Edge Elite 360 OBJ",
-                "soldOut": false,
-                "price": 170.97,
-                "numOfColors": 1,
-                "imageUrl": "/product/nike_vapor_edge_elite_360_obj_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 2
-            },
-            {
-                "productId": 4,
-                "productName": "Nike Alpha Menace Pro 2 Mid By You",
-                "soldOut": false,
-                "price": 120,
-                "numOfColors": 6,
-                "imageUrl": "./product/nike_alpha_menace_pro_2_mid_by_you_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 2
-            },
-            {
-                "productId": 5,
-                "productName": "Nike Mercurial Superfly 8 Elite FG",
-                "soldOut": false,
-                "price": 275,
-                "numOfColors": 1,
-                "imageUrl": "./product/nike_mecurial_superfly_8_elite_fg_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 3
-            },
-            {
-                "productId": 6,
-                "productName": "Nike Phantom Scorpion Elite Dynamic Fit FG",
-                "soldOut": false,
-                "price": 265.97,
-                "numOfColors": 1,
-                "imageUrl": "./product/nike_phantom_corpion_elite_dynamic_fig_fg_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 3
-            },
-            {
-                "productId": 7,
-                "productName": "NikeCourt Zoom Vapor X Air Max 95",
-                "soldOut": false,
-                "price": 123.97,
-                "numOfColors": 2,
-                "imageUrl": "./product/nikecourt_zoom_vapor_x_air_max_95_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 4
-            },
-            {
-                "productId": 8,
-                "productName": "NikeCourt Air Zoom GP Turbo",
-                "soldOut": false,
-                "price": 126.97,
-                "numOfColors": 5,
-                "imageUrl": "./product/nikecourt_air_zoom_gp_turbo_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 4
-            },
-            {
-                "productId": 9,
-                "productName": "Nike Alpha Huarache Elite 3 Low",
-                "soldOut": false,
-                "price": 90,
-                "numOfColors": 6,
-                "imageUrl": "./product/nike_alpha_huarache_elite_3_low_main.jpg",
-                "parentCategoryId": 1,
-                "categoryId": 5
-            },
-            {
-                "productId": 10,
-                "productName": "Nike Force Zoom Trout 7 Turf",
+                "productId": 39,
+                "productName": "Nike Blazer Mid 77",
                 "soldOut": false,
                 "price": 120,
                 "numOfColors": 1,
-                "imageUrl": "./product/nike_force_zoom_trout_7_turf_main.jpg",
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 5
+                "categoryId": 6
             },
             {
-                "productId": 11,
-                "productName": "Nike Dri-FIT Lebron King Me",
+                "productId": 40,
+                "productName": "Nike Air Vapormax 2020 FlyKnit",
                 "soldOut": false,
-                "price": 35,
+                "price": 220,
                 "numOfColors": 1,
-                "imageUrl": "./product/nike_drifit_lebron_king_me_main.jpg",
-                "parentCategoryId": 2,
-                "categoryId": 1
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Vapormax_2020_FlyKnit_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
             },
             {
-                "productId": 12,
-                "productName": "Nike rayguns",
+                "productId": 41,
+                "productName": "Nike Air Force 1 Shadow SE",
                 "soldOut": false,
-                "price": 45,
-                "numOfColors": 2,
-                "imageUrl": "./product/Nike_rayguns_main.jpg",
-                "parentCategoryId": 2,
-                "categoryId": 1
+                "price": 120,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_ Shadow_SE_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
             },
             {
-                "productId": 13,
-                "productName": "Nike Dri-FIT UV Vapor",
-                "soldOut": false,
-                "price": 65,
-                "numOfColors": 3,
-                "imageUrl": "./product/nike_drifit_uv_vapor_main.jpg",
-                "parentCategoryId": 2,
-                "categoryId": 2
-            },
-            {
-                "productId": 14,
-                "productName": "Jordan Jumpman Air",
-                "soldOut": false,
-                "price": 45.97,
-                "numOfColors": 3,
-                "imageUrl": "./product/_main.jpg",
-                "parentCategoryId": 2,
-                "categoryId": 2
-            },
-            {
-                "productId": 15,
-                "productName": "Nike Dri-FIT",
-                "soldOut": false,
-                "price": 40,
-                "numOfColors": 3,
-                "imageUrl": "./product/_main.jpg",
-                "parentCategoryId": 2,
-                "categoryId": 3
-            },
-            {
-                "productId": 16,
-                "productName": "Nikola Jokic Nuggets Icon Edition 2020",
-                "soldOut": false,
-                "price": 110,
-                "numOfColors": 2,
-                "imageUrl": "./product/nikola_jokic_nuggets_icon_edtion_2020_main.jpg",
-                "parentCategoryId": 2,
-                "categoryId": 3
-            },
-            {
-                "productId": 17,
-                "productName": "Nike Sportswear Tech Fleece",
+                "productId": 42,
+                "productName": "Nike Air Force 1",
                 "soldOut": false,
                 "price": 100,
-                "numOfColors": 11,
-                "imageUrl": "./product/nike_sportswear_tech_fleece_main.jpg",
-                "parentCategoryId": 3,
-                "categoryId": 1
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
             },
             {
-                "productId": 18,
-                "productName": "Nike sportswear essential",
+                "productId": 43,
+                "productName": "LeBron 18",
                 "soldOut": false,
-                "price": 65,
-                "numOfColors": 5,
-                "imageUrl": "./product/_main.jpg",
-                "parentCategoryId": 3,
-                "categoryId": 1
+                "price": 200,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/LeBron_18_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 44,
+                "productName": "Nike Air Zoom SuperRep 2",
+                "soldOut": false,
+                "price": 120,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 45,
+                "productName": "Nike Metcon Sport",
+                "soldOut": false,
+                "price": 100,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Metcon_Sport_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 46,
+                "productName": "Nike ZoomX SuperRep Surge",
+                "soldOut": false,
+                "price": 140,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 47,
+                "productName": "Nike React Infinity Run Flyknit 2",
+                "soldOut": false,
+                "price": 160,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_React_Infinity_Run_Flyknit_2_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 39,
+                "productName": "Nike Blazer Mid 77",
+                "soldOut": false,
+                "price": 120,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Vapormax_2020_FlyKnit_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 40,
+                "productName": "Nike Air Vapormax 2020 FlyKnit",
+                "soldOut": false,
+                "price": 220,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/6Nike_Blazer_Mid_77_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 41,
+                "productName": "Nike Air Force 1 Shadow SE",
+                "soldOut": false,
+                "price": 120,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_ Shadow_SE_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 42,
+                "productName": "Nike Air Force 1",
+                "soldOut": false,
+                "price": 100,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 43,
+                "productName": "LeBron 18",
+                "soldOut": false,
+                "price": 200,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/LeBron_18_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 44,
+                "productName": "Nike Air Zoom SuperRep 2",
+                "soldOut": false,
+                "price": 120,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 45,
+                "productName": "Nike Metcon Sport",
+                "soldOut": false,
+                "price": 100,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Metcon_Sport_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 46,
+                "productName": "Nike ZoomX SuperRep Surge",
+                "soldOut": false,
+                "price": 140,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
+            },
+            {
+                "productId": 47,
+                "productName": "Nike React Infinity Run Flyknit 2",
+                "soldOut": false,
+                "price": 160,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/home/latestGarment/Nike_React_Infinity_Run_Flyknit_2_1.png",
+                "parentCategoryId": 1,
+                "categoryId": 6
             },
             {
                 "productId": 19,
