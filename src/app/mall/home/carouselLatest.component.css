@@ -1,15 +1,3 @@
 *:focus {
     outline: 0 !important;
 }
-
-.grid {
-    display:grid;
-    grid-gap:24px;
-    grid-template-columns:repeat(3,1fr);
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}

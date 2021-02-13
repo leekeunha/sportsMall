@@ -7,9 +7,10 @@ import { routing } from './app.routing';
 import { AppHeaderComponent } from './mall/appheader/appHeader.component';
 import { AppFooterComponent } from './mall/appfooter/appFooter.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductsModule } from './mall/products/products.module';
 
 @NgModule({
-    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule],
+    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductsModule],
     declarations: [AppComponent, AppHeaderComponent, AppFooterComponent],
     bootstrap: [AppComponent]
 })
