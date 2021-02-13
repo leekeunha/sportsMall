@@ -1,0 +1,32 @@
+.main-nav{
+    display:flex;
+    font-size:1.25rem;
+    margin:0 auto;
+    list-style:none;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+ul {
+    padding: 0;
+    width: 1200px;
+    margin: 20px auto;
+    margin-left: 80px
+}
+
+li {
+    display: inline;
+}
+
+.carousel-wrapper {
+    margin: 50px;
+}
+
+.sub-title{
+    margin-left: 50px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,15 @@
+footer{
+    background-color:black;
+}
+
+p{
+    color:white;
+}
+
+li {
+    list-style: none;
+}
+
+li span{
+    color:dimgrey;
+}

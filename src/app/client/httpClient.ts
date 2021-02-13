@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
 import { ParentCategory } from '../models/parentCategory.model';
 import { Product } from '../models/product.model';
-import * as productsData from './fixture/products.json';
-import * as categoriesData from './fixture/categories.json';
-import * as homeData from './fixture/home.json';
+import * as productsData from './fixture/productsData.js';
+import * as categoriesData from './fixture/parentCategoriesData.js';
+import * as homeData from './fixture/homeData.js';
 import { Home } from '../models/home.model';
 
 @Injectable()
@@ -46,11 +46,9 @@ export class HttpClient {
     getHome(): Home {
 
         const home: Home = new Home();
-        home.bannerImageList = homeData.bannerImageList;
+        home.bannerList = homeData.bannerList;
         home.latestGarmentList = homeData.latestGarmentList;
 
         return home;
     }
-
-
 };

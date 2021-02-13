@@ -1,0 +1,11 @@
+<ngb-carousel *ngIf="latestGarmentList">
+    <ng-template ngbSlide *ngFor="let item of slideList">
+        <div class="picsum-img-wrapper">
+            <products-row [model]="item"></products-row>
+        </div>
+    </ng-template>
+    <div class="swiper-scrollbar">
+        <div class="swiper-scrollbar-drag">
+        </div>
+    </div>
+</ngb-carousel>
