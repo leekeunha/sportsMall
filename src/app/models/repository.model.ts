@@ -7,10 +7,17 @@ import { Banner } from './banner.model';
 @Injectable()
 export class Model {
     private home: Home = new Home();
+    private productList: Product[] = new Array();
+
     //private locator = (p: Product, id: number) => p.productId == id;
 
     constructor(private dataSource: RestDataSource) {
         this.dataSource.getHome().subscribe(home => this.home = home);
+        this.dataSource.getProducts().subscribe(productList => this.productList = productList);
+        //this.dataSource.getProducts().subscribe(products => {
+        //    this.ProductList = products;
+        //    debugger;
+        //});
     }
 
     getBannerList(): Banner[] {
@@ -19,6 +26,10 @@ export class Model {
 
     getLatestGarmentList(): Product[] {
         return this.home.latestGarmentList;
+    }
+
+    getProductList(): Product[] {
+        return this.productList;
     }
 
     //getProduct(id: number): Product {

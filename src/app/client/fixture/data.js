@@ -1,6 +1,114 @@
-﻿module.exports = function () {
-    var productsData = {
-        products: [
+module.exports = function () {
+    var data = {
+        "home": {
+            "bannerList": [
+                {
+                    "imageUrl": "/assets/images/home/banner/nike_air_force1.png",
+                    "redirectUrl": "/product_detail/1"
+                },
+                {
+                    "imageUrl": "/assets/images/home/banner/nike_react_finitiry_run_flyknit_2.png",
+                    "redirectUrl": "/product_detail/2"
+                },
+                {
+                    "imageUrl": "/assets/images/home/banner/start_a_new_tradition.png",
+                    "redirectUrl": "/product_detail/3"
+                }
+            ],
+            "latestGarmentList": [
+                {
+                    "productId": 39,
+                    "productName": "Nike Blazer Mid 77",
+                    "soldOut": false,
+                    "price": 120,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 40,
+                    "productName": "Nike Air Vapormax 2020 FlyKnit",
+                    "soldOut": false,
+                    "price": 220,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Vapormax_2020_FlyKnit_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 41,
+                    "productName": "Nike Air Force 1 Shadow SE",
+                    "soldOut": false,
+                    "price": 120,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_ Shadow_SE_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 42,
+                    "productName": "Nike Air Force 1",
+                    "soldOut": false,
+                    "price": 100,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 43,
+                    "productName": "LeBron 18",
+                    "soldOut": false,
+                    "price": 200,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/LeBron_18_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 44,
+                    "productName": "Nike Air Zoom SuperRep 2",
+                    "soldOut": false,
+                    "price": 120,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 45,
+                    "productName": "Nike Metcon Sport",
+                    "soldOut": false,
+                    "price": 100,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Metcon_Sport_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 46,
+                    "productName": "Nike ZoomX SuperRep Surge",
+                    "soldOut": false,
+                    "price": 140,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                },
+                {
+                    "productId": 47,
+                    "productName": "Nike React Infinity Run Flyknit 2",
+                    "soldOut": false,
+                    "price": 160,
+                    "numOfColors": 1,
+                    "imageUrl": "/assets/images/home/latestGarment/Nike_React_Infinity_Run_Flyknit_2_1.png",
+                    "parentCategoryId": 1,
+                    "categoryId": 6
+                }
+            ]
+        },
+        "productList": [
             {
                 "productId": 1,
                 "productName": "Lebron 18 Black/Electric Green",
@@ -389,7 +497,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_Blazer_Mid_77_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 40,
@@ -399,7 +507,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Vapormax_2020_FlyKnit_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 41,
@@ -409,7 +517,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_ Shadow_SE_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 42,
@@ -419,7 +527,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Force_1_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 43,
@@ -429,7 +537,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/LeBron_18_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 44,
@@ -439,7 +547,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_Air_Zoom_SuperRep_2_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 45,
@@ -449,7 +557,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_Metcon_Sport_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 46,
@@ -459,7 +567,7 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_ZoomX_SuperRep_Surge_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
             },
             {
                 "productId": 47,
@@ -469,9 +577,101 @@
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_React_Infinity_Run_Flyknit_2_1.png",
                 "parentCategoryId": 1,
-                "categoryId": 6
+                "categoryId": 1
+            }
+        ],
+        "parentCategories": [
+            {
+                "id": 1,
+                "name": "Shoes",
+                "categories": [
+                    {
+                        "categoryId": 1,
+                        "categoryName": "Basketball"
+                    },
+                    {
+                        "categoryId": 2,
+                        "categoryName": "Football"
+                    },
+                    {
+                        "categoryId": 3,
+                        "categoryName": "Soccer"
+                    },
+                    {
+                        "categoryId": 4,
+                        "categoryName": "Tennis"
+                    },
+                    {
+                        "categoryId": 5,
+                        "categoryName": "Baseball"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Tops & T-Shirts",
+                "categories": [
+                    {
+                        "categoryId": 1,
+                        "categoryName": "Short Sleeve Shirts"
+                    },
+                    {
+                        "categoryId": 2,
+                        "categoryName": "Long Sleeve Shirts"
+                    },
+                    {
+                        "categoryId": 3,
+                        "categoryName": "Sleeveless & TankTops"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Pants & Tights",
+                "categories": [
+                    {
+                        "categoryId": 1,
+                        "categoryName": "Sweatpants"
+                    },
+                    {
+                        "categoryId": 2,
+                        "categoryName": "Tights & Leggings"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Surf & Swimwear",
+                "categories": [
+                    {
+                        "categoryId": 1,
+                        "categoryName": "Swim Bottoms"
+                    },
+                    {
+                        "categoryId": 2,
+                        "categoryName": "Swim Tops"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Accessories & Equipment",
+                "categories": [
+                    {
+                        "categoryId": 1,
+                        "categoryName": "Bags and Backpacks"
+                    },
+                    {
+                        "categoryId": 2,
+                        "categoryName": "Balls"
+                    },
+                    {
+                        "categoryId": 3,
+                        "categoryName": "Gloves & Mitts"
+                    }
+                ]
             }
         ]
     }
-    return productsData
+    return data
 }

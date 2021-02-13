@@ -7,7 +7,7 @@ import { Model } from './repository.model';
     imports: [HttpClientModule],
     providers: [Model, RestDataSource,
         {
-            provide: REST_URL, useValue: `http://${location.hostname}:3500/home`
+            provide: REST_URL, useValue: `http://${location.hostname}:3500`
         }]
 })
 export class ModelModule { }

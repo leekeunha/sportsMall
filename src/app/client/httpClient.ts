@@ -3,7 +3,7 @@ import { ParentCategory } from '../models/parentCategory.model';
 import { Product } from '../models/product.model';
 import * as productsData from './fixture/productsData.js';
 import * as categoriesData from './fixture/parentCategoriesData.js';
-import * as homeData from './fixture/homeData.js';
+import * as homeData from './fixture/data.js';
 import { Home } from '../models/home.model';
 
 @Injectable()
