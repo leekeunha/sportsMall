@@ -6,19 +6,18 @@ import { Product } from './product.model';
 import { Banner } from './banner.model';
 
 export const REST_URL = new InjectionToken("rest_url");
-export const HOME = "home";
-export const PRODUCTLIST = "productList";
+const HOME = "home";
+ const PRODUCTLIST = "productList";
 
 @Injectable()
 export class RestDataSource {
-    
 
     private slideProductsList = [];
     private productsPerSlide = 3;
     private bannerList = new Array<Banner>();
     private latestGarmentList = new Array<Product>();
     private bannerImageUrlList = [];
-    private cateogryProductList = [];
+    private categoryProductList : Product[];
     private productList: Product[] = new Array();
 
     constructor(private http: HttpClient, @Inject(REST_URL) private url: string) {
@@ -33,7 +32,6 @@ export class RestDataSource {
         });
 
         this.getProducts().subscribe(productList => {
-            
             this.productList = productList;
 
         });
@@ -63,7 +61,6 @@ export class RestDataSource {
         return this.bannerImageUrlList;
     }
 
-    //filter
     setSlideProductsList(home) {
         let arrayCopy = [...home.latestGarmentList]
         while (arrayCopy.length > 0) {
@@ -79,35 +76,30 @@ export class RestDataSource {
 
     getSelectedCategoryProductList(category: string): Product[]{
 
-        debugger;
         switch (category) {
             case "shoes":
-                this.cateogryProductList = this.filterByParentCategoryId(1);
+                this.categoryProductList = this.filterByParentCategoryId(1);
                 break;
             case "tops":
-                this.cateogryProductList = this.filterByParentCategoryId(2);
+                this.categoryProductList = this.filterByParentCategoryId(2);
                 break;
             case "pants":
-                this.cateogryProductList = this.filterByParentCategoryId(3);
+                this.categoryProductList = this.filterByParentCategoryId(3);
                 break;
             case "swimwear":
-                this.cateogryProductList = this.filterByParentCategoryId(4);
+                this.categoryProductList = this.filterByParentCategoryId(4);
                 break;
             case "accesories":
-                this.cateogryProductList = this.filterByParentCategoryId(5);
+                this.categoryProductList = this.filterByParentCategoryId(5);
                 break;
             default:
                 break;
         }
-        return this.cateogryProductList;
+        return this.categoryProductList;
     }
 
     filterByParentCategoryId(parentCategoryId: number): Product[] {
-        this.getProducts().subscribe(productList => {
-            this.productList = productList;
             return this.productList.filter(p => p.parentCategoryId == parentCategoryId);
-        });
-        return this.productList.filter(p => p.parentCategoryId == parentCategoryId);
     }
 
 }

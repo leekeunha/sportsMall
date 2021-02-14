@@ -2,13 +2,12 @@
 import { ActivatedRoute } from '@angular/router';
 import { Repository } from '../../models/repository.model';
 import { Product } from '../../models/product.model';
-import { CounterDirective } from '../../directives/counter.directive';
 
 @Component({
-    selector: "category",
-    templateUrl: "./category.component.html"
+    selector: "category-products",
+    templateUrl: "./categoryProducts.component.html"
 })
-export class CategoryComponent {
+export class CategoryProductsComponent {
 
     public cateogryProductList: Product[];
     public productsPerPage = 9;
@@ -17,8 +16,9 @@ export class CategoryComponent {
 
     constructor(private repository: Repository, activeRoute: ActivatedRoute) {
         let category: string = activeRoute.snapshot.url[1].path;
-        this.cateogryProductList = repository.getSelectedCategoryProductList(category);
-        //debugger;
+        repository.getProducts().subscribe(data => {
+            this.cateogryProductList = repository.getSelectedCategoryProductList(category);
+        });
     }
 
     get products(): Product[] {
@@ -26,10 +26,8 @@ export class CategoryComponent {
         return this.cateogryProductList.slice(pageIndex, pageIndex + this.productsPerPage);
     }
 
-
     changePage(newPage: number) {
         this.selectedPage = newPage;
-        
     }
 
     get pageCount(): number {

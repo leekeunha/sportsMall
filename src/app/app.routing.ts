@@ -1,14 +1,14 @@
 ﻿import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from './mall/home/home.component';
-import { CategoryComponent } from './mall/category/category.componenet';
+import { CategoryProductsComponent } from './mall/categoryProducts/CategoryProducts.componenet';
 
 const routes: Routes = [
     { path: "", component: HomeComponent },
-    { path: "products/shoes", component: CategoryComponent },
-    { path: "products/tops", component: CategoryComponent },
-    { path: "products/pants", component: CategoryComponent },
-    { path: "products/swimwear", component: CategoryComponent },
-    { path: "products/accesories", component: CategoryComponent },
+    { path: "products/shoes", component: CategoryProductsComponent },
+    { path: "products/tops", component: CategoryProductsComponent },
+    { path: "products/pants", component: CategoryProductsComponent },
+    { path: "products/swimwear", component: CategoryProductsComponent },
+    { path: "products/accesories", component: CategoryProductsComponent },
     { path: "**", component: HomeComponent },
 ]
 
