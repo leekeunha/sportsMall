@@ -85,8 +85,12 @@ export class ProductsComponent {
         debugger;
     }
 
-    get pageNumbers(): number[] {
-        let result = Array(Math.ceil(this.cateogryProductList.length / this.productsPerPage)).fill(0).map((x, i) => i + 1);
-        return result;
+    get pageCount(): number {
+        return Math.ceil(this.cateogryProductList.length / this.productsPerPage)
     }
+
+    //get pageNumbers(): number[] {
+    //    let result = Array(Math.ceil(this.cateogryProductList.length / this.productsPerPage)).fill(0).map((x, i) => i + 1);
+    //    return result;
+    //}
 }
