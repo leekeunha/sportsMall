@@ -3,16 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\client",
     "\\src\\app\\client\\fixture",
     "\\src\\app\\mall",
+    "\\src\\app\\mall\\appfooter",
+    "\\src\\app\\mall\\appheader",
+    "\\src\\app\\mall\\category",
     "\\src\\app\\mall\\home",
-    "\\src\\assets",
-    "\\src\\assets\\images",
-    "\\src\\assets\\images\\home",
-    "\\src\\assets\\images\\home\\latestGarment",
-    "\\src\\environments"
+    "\\src\\app\\mall\\products"
   ],
-  "SelectedNode": "\\src\\app\\mall\\home\\carouselLatest.component.html",
+  "SelectedNode": "\\src\\app\\mall\\products\\products.component.ts",
   "PreviewInSolutionExplorer": false
 }

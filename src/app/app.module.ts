@@ -7,11 +7,13 @@ import { routing } from './app.routing';
 import { AppHeaderComponent } from './mall/appheader/appHeader.component';
 import { AppFooterComponent } from './mall/appfooter/appFooter.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ProductsModule } from './mall/products/products.module';
+import { CategoryComponent } from './mall/category/category.componenet';
+import { ProductModule } from './mall/product/product.module';
+import { CounterDirective } from './directives/counter.directive';
 
 @NgModule({
-    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductsModule],
-    declarations: [AppComponent, AppHeaderComponent, AppFooterComponent],
+    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule],
+    declarations: [AppComponent, AppHeaderComponent, AppFooterComponent, CategoryComponent, CounterDirective],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

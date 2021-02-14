@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { Home } from '../../models/home.model';
-import { Banner } from '../../models/banner.model';
-import { RestDataSource } from '../../models/rest.datasource';
+import { Repository } from '../../models/repository.model';
 
 @Component({
     selector: 'ngbd-carousel-latest',
@@ -10,27 +8,9 @@ import { RestDataSource } from '../../models/rest.datasource';
 })
 export class NgbdCarouselLatest {
 
-    public latestGarmentList = [];
-    public slideList = [];
-    public productsPerSlide = 3;
+    public slideProductsList = [];
 
-    constructor(private dataSource: RestDataSource) {
-        this.dataSource.getHome().subscribe(data => {
-
-            data.latestGarmentList.forEach((item, index) => {
-                this.latestGarmentList[index] = item;
-            });
-
-            this.setSlideProductList();
-        });
+    constructor(private repository: Repository) {
+        this.slideProductsList = repository.getSlideProductList();
     }
-
-    setSlideProductList() {
-        let arrayCopy = [...this.latestGarmentList]
-
-        while (arrayCopy.length > 0) {
-            this.slideList.push(arrayCopy.splice(0, this.productsPerSlide))
-        }
-    }
-
 }

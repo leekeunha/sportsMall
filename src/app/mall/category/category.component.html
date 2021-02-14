@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class="p-5">
+        <div class="row">
+            <div *ngFor="let item of products;let index = index">
+                <product class="col" [model]="item"></product>
+                <div *ngIf="index % 3 == 2" class="row"></div>
+            </div>
+        </div>
+
+        <div class="btn-group float-right pr-5">
+            <button *counter="let page of pageCount" (click)="changePage(page)"
+                    class="btn btn-outline-primary" [class.active]="page == selectedPage">
+                {{page}}
+            </button>
+        </div>
+    </div>
+</div>

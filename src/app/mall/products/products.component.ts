@@ -24,8 +24,8 @@ export class ProductsComponent {
             let allProducts: Product[] = data;
             this.FilterCategoryProductList(allProducts,activeRoute);
             this.rowProductGroupList = this.getRowProductGroup();
-            console.log(this.rowProductGroupList);
-            debugger;
+            //console.log(this.rowProductGroupList);
+            //debugger;
         });
     }
 

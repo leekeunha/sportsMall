@@ -286,8 +286,8 @@ module.exports = function () {
                 "price": 160,
                 "numOfColors": 1,
                 "imageUrl": "/assets/images/home/latestGarment/Nike_React_Infinity_Run_Flyknit_2_1.png",
-                "parentCategoryId": 1,
-                "categoryId": 6
+                "parentCategoryId": 2,
+                "categoryId": 1
             },
             {
                 "productId": 19,

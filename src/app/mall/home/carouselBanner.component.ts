@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RestDataSource } from '../../models/rest.datasource';
+import { Repository } from '../../models/repository.model';
 
 @Component({
     selector: 'ngbd-carousel-banner',
@@ -10,11 +10,7 @@ export class NgbdCarouselBanner {
 
     public images = [];
 
-    constructor(private dataSource: RestDataSource) {
-        this.dataSource.getHome().subscribe(data => {
-            data.bannerList.forEach((item, index) => {
-                this.images[index] = item.imageUrl;
-            })
-        });
+    constructor(private repository: Repository) {
+        this.images = repository.getBannerImageUrlList();
     }
 }
