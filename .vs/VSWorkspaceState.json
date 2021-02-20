@@ -3,14 +3,15 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\client",
+    "\\src\\app\\client\\fixture",
     "\\src\\app\\mall",
-    "\\src\\app\\mall\\appfooter",
-    "\\src\\app\\mall\\appheader",
-    "\\src\\app\\mall\\home",
-    "\\src\\app\\mall\\product",
-    "\\src\\app\\tests",
-    "\\src\\assets"
+    "\\src\\app\\mall\\categoryProducts",
+    "\\src\\app\\models",
+    "\\src\\assets",
+    "\\src\\assets\\images",
+    "\\src\\assets\\images\\appHeader"
   ],
-  "SelectedNode": "\\src\\assets",
+  "SelectedNode": "\\src\\styles.css",
   "PreviewInSolutionExplorer": false
 }
