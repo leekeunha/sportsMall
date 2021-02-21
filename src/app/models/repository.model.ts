@@ -3,9 +3,13 @@ import { Product } from './product.model';
 import { RestDataSource } from './rest.datasource';
 import { Banner } from './banner.model';
 import { Observable } from 'rxjs';
+import { Category } from './category.model';
+import { ParentCategory } from './parentCategory.model';
 
 @Injectable()
 export class Repository {
+
+    
 
     constructor(private dataSource: RestDataSource) {
     }
@@ -30,7 +34,19 @@ export class Repository {
         return this.dataSource.getBannerImageUrlList();
     }
 
-    getSelectedCategoryProductList(category: string): Product[] {
-        return this.dataSource.getSelectedCategoryProductList(category);
+    getProductListInParentCategory(category: string): Product[] {
+        return this.dataSource.getProductListInParentCategory(category);
+    }
+
+    getCategoryListInParentCategory(category: string): Category[] {
+        return this.dataSource.getCategoryListInParentCategory(category);
+    }
+
+    getParentCategories(): Observable<ParentCategory[]> {
+        return this.dataSource.getParentCategories();
+    }
+
+    getProductsByCategoryIdInParent(categoryId: number): Product[] {
+        return this.dataSource.getProductsByCategoryIdInParent(categoryId);
     }
 }

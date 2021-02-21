@@ -5,5 +5,5 @@ export class ParentCategory {
 
     public id?: number;
     public name: string;
-    public categories: Category[];
+    public categoryList: Category[];
 }

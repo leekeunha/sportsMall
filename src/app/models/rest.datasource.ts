@@ -4,10 +4,13 @@ import { HttpClient } from "@angular/common/http";
 import { Home } from './home.model';
 import { Product } from './product.model';
 import { Banner } from './banner.model';
+import { ParentCategory } from './parentCategory.model';
+import { Category } from './category.model';
 
 export const REST_URL = new InjectionToken("rest_url");
 const HOME = "home";
- const PRODUCTLIST = "productList";
+const PRODUCTLIST = "productList";
+const PARENTCATEGORYLIST = "parentCategoryList";
 
 @Injectable()
 export class RestDataSource {
@@ -17,8 +20,10 @@ export class RestDataSource {
     private bannerList = new Array<Banner>();
     private latestGarmentList = new Array<Product>();
     private bannerImageUrlList = [];
-    private categoryProductList : Product[];
+    private parentCategoryProductList : Product[];
     private productList: Product[] = new Array();
+    private parentCategoryList: ParentCategory[] = new Array();
+    private categoryList: Category[] = new Array();
 
     constructor(private http: HttpClient, @Inject(REST_URL) private url: string) {
 
@@ -33,8 +38,11 @@ export class RestDataSource {
 
         this.getProducts().subscribe(productList => {
             this.productList = productList;
-
         });
+
+        this.getParentCategories().subscribe(parentCategoryList => {
+            this.parentCategoryList = parentCategoryList;
+        })
     }
 
     getHome(): Observable<Home> {
@@ -43,6 +51,10 @@ export class RestDataSource {
 
     getProducts(): Observable<Product[]> {
         return this.http.get<Product[]>(`${this.url}/${PRODUCTLIST}`);
+    }
+
+    getParentCategories(): Observable <ParentCategory[]> {
+        return this.http.get<ParentCategory[]>(`${this.url}/${PARENTCATEGORYLIST}`);
     }
 
     getSlideProductsList() {
@@ -74,32 +86,69 @@ export class RestDataSource {
         });
     }
 
-    getSelectedCategoryProductList(category: string): Product[]{
+    getProductListInParentCategory(parentCategory: string): Product[]{
 
-        switch (category) {
+        switch (parentCategory) {
             case "shoes":
-                this.categoryProductList = this.filterByParentCategoryId(1);
+                this.parentCategoryProductList = this.filterProductsByParentCategoryId(1);
                 break;
             case "tops":
-                this.categoryProductList = this.filterByParentCategoryId(2);
+                this.parentCategoryProductList = this.filterProductsByParentCategoryId(2);
                 break;
             case "pants":
-                this.categoryProductList = this.filterByParentCategoryId(3);
+                this.parentCategoryProductList = this.filterProductsByParentCategoryId(3);
                 break;
             case "swimwear":
-                this.categoryProductList = this.filterByParentCategoryId(4);
+                this.parentCategoryProductList = this.filterProductsByParentCategoryId(4);
                 break;
             case "accesories":
-                this.categoryProductList = this.filterByParentCategoryId(5);
+                this.parentCategoryProductList = this.filterProductsByParentCategoryId(5);
                 break;
             default:
                 break;
         }
-        return this.categoryProductList;
+        return this.parentCategoryProductList;
     }
 
-    filterByParentCategoryId(parentCategoryId: number): Product[] {
-            return this.productList.filter(p => p.parentCategoryId == parentCategoryId);
+    getCategoryListInParentCategory(parentCategory: string): Category[] {
+
+        switch (parentCategory) {
+            case "shoes":
+                this.categoryList = this.findCategoriesByParentCategoryId(1);
+                break;
+            case "tops":
+                this.categoryList = this.findCategoriesByParentCategoryId(2);
+                break;
+            case "pants":
+                this.categoryList = this.findCategoriesByParentCategoryId(3);
+                break;
+            case "swimwear":
+                this.categoryList = this.findCategoriesByParentCategoryId(4);
+                break;
+            case "accesories":
+                this.categoryList = this.findCategoriesByParentCategoryId(5);
+                break;
+            default:
+                break;
+        }
+        return this.categoryList;
+    }
+
+    getProductsByCategoryIdInParent(categoryId: number): Product[] {
+        return this.filterProductsByCategoryIdInParent(categoryId);
+    }
+
+    filterProductsByParentCategoryId(parentCategoryId: number): Product[] {
+        return this.productList.filter(p => p.parentCategoryId == parentCategoryId);
+    }
+
+    findCategoriesByParentCategoryId(parentCategoryId: number): Category[] {
+        let parentCategory: ParentCategory = this.parentCategoryList.find(p => p.id == parentCategoryId);
+        return parentCategory.categoryList;
+    }
+
+    filterProductsByCategoryIdInParent(categoryId: number): Product[] {
+        return this.parentCategoryProductList.filter(p => p.categoryId == categoryId);
     }
 
 }
