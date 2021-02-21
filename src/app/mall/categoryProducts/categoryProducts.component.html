@@ -1,9 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-2 mt-5">
-            <div class="row" *ngFor="let item of categoryList">
-                <a (click)="getProductsByCategoryIdInParentCategory(item.categoryId)">{{item.categoryName}}</a>
-            </div>
+            <ul class="nav flex-column h6 pl-5 mb-2" *ngFor="let item of categoryList">
+                <li class="nav-item">
+                    <a (click)="getProductsByCategoryIdInParentCategory(item.categoryId)">{{item.categoryName}}</a>
+                </li>
+            </ul>
         </div>
         <div class="col-10 p-5">
             <div class="row">

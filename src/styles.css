@@ -13,3 +13,7 @@
 *:focus {
     outline: 0 !important;
 }
+
+a {
+    cursor: pointer;
+}

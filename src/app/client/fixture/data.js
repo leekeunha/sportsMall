@@ -218,7 +218,156 @@ module.exports = function () {
                 "imageUrl": "/assets/images/products/Nike_Sportswear_Heritage_1.png",
                 "parentCategoryId": 5,
                 "categoryId": 1
-            }
+            },
+            {
+                "productId": 12,
+                "productName": "Men's Crew",
+                "soldOut": false,
+                "price": 80,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Mens_Crew.png",
+                "parentCategoryId": 2,
+                "categoryId": 2
+            },
+            {
+                "productId": 13,
+                "productName": "Nike Standard Issue Rayguns",
+                "soldOut": false,
+                "price": 75,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Standard_Issue_Rayguns_1.png",
+                "parentCategoryId": 2,
+                "categoryId": 2
+            },
+            {
+                "productId": 14,
+                "productName": "Nike Yoga",
+                "soldOut": false,
+                "price": 50,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Yoga_1.png",
+                "parentCategoryId": 2,
+                "categoryId": 3
+            },
+            {
+                "productId": 15,
+                "productName": "Men's Tank",
+                "soldOut": false,
+                "price": 25,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Mens_Tank_1.png",
+                "parentCategoryId": 2,
+                "categoryId":3 
+            },
+            {
+                "productId": 16,
+                "productName": "Mens Basketball Jersey",
+                "soldOut": false,
+                "price": 40,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Mens_Basketball_Jersey_1.png",
+                "parentCategoryId": 2,
+                "categoryId":3 
+            },
+            {
+                "productId": 17,
+                "productName": "Nike Sportswear NSW",
+                "soldOut": false,
+                "price": 80,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Sportswear_NSW_1.png",
+                "parentCategoryId": 3,
+                "categoryId": 1
+            },
+            {
+                "productId": 18,
+                "productName": "Nike Sportswear Gym Vintage",
+                "soldOut": false,
+                "price": 45,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Sportswear_Gym_Vintage_1.png",
+                "parentCategoryId": 3,
+                "categoryId": 1
+            },
+            {
+                "productId": 19,
+                "productName": "Nike Yoga Luxe",
+                "soldOut": false,
+                "price": 90,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Yoga_Luxe_1.png",
+                "parentCategoryId": 3,
+                "categoryId": 2
+            },
+            {
+                "productId": 20,
+                "productName": "Nike Epic Luxe",
+                "soldOut": false,
+                "price": 90,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Epic_Luxe_1.png",
+                "parentCategoryId": 3,
+                "categoryId": 2
+            },
+            {
+                "productId": 21,
+                "productName": "Nike Solid Logo",
+                "soldOut": false,
+                "price": 50,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Solid_Logo_1.png",
+                "parentCategoryId": 4,
+                "categoryId": 2
+            }, {
+                "productId": 22,
+                "productName": "Nike T-Back",
+                "soldOut": false,
+                "price": 48,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_T_Back_1.png",
+                "parentCategoryId": 4,
+                "categoryId": 2
+            },
+            {
+                "productId": 23,
+                "productName": "Nike Bikini",
+                "soldOut": false,
+                "price": 40,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Bikini_1.png",
+                "parentCategoryId": 4,
+                "categoryId": 1
+            },
+            {
+                "productId": 24,
+                "productName": "Nike Heritage Swoosh Fly",
+                "soldOut": false,
+                "price": 25,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Heritage_Swoosh_Fly_1.png",
+                "parentCategoryId": 5,
+                "categoryId": 1
+            },
+            {
+                "productId": 25,
+                "productName": "FC Barcelona Pitch",
+                "soldOut": false,
+                "price": 25,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/FC_Barcelona_Pitch_1.png",
+                "parentCategoryId": 5,
+                "categoryId": 2
+            },
+            {
+                "productId": 26,
+                "productName": "Nike Vapor Jet 6.0",
+                "soldOut": false,
+                "price": 55,
+                "numOfColors": 1,
+                "imageUrl": "/assets/images/products/Nike_Vapor_Jet_6_1.png",
+                "parentCategoryId": 5,
+                "categoryId": 3
+            }            
         ],
         "parentCategoryList": [
             {

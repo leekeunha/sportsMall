@@ -1,5 +1,5 @@
-﻿import { Component } from "@angular/core";
-import { ActivatedRoute } from '@angular/router';
+﻿import { Component, OnDestroy, OnInit } from "@angular/core";
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Repository } from '../../models/repository.model';
 import { Product } from '../../models/product.model';
 import { Category } from '../../models/category.model';
@@ -17,10 +17,14 @@ export class CategoryProductsComponent {
     public productsPerRow = 3;
     public selectedPage = 1;
     public categoryList: Category[];
-
-    constructor(private repository: Repository, activeRoute: ActivatedRoute) {
+    
+    constructor(private repository: Repository, activeRoute: ActivatedRoute, private router: Router) {
 
         let parentCategory: string = activeRoute.snapshot.url[1].path;
+        this.router.events.subscribe((e: any) => {
+            this.productList = repository.getProductListInParentCategory(parentCategory);
+            this.categoryList = repository.getCategoryListInParentCategory(parentCategory);
+        });
 
         repository.getProducts().subscribe(data => {
             this.productList = repository.getProductListInParentCategory(parentCategory);
@@ -30,7 +34,7 @@ export class CategoryProductsComponent {
             this.categoryList = repository.getCategoryListInParentCategory(parentCategory);
         });
     }
-
+    
     get products(): Product[] {
         let pageIndex = (this.selectedPage - 1) * this.productsPerPage;
         return this.productList.slice(pageIndex, pageIndex + this.productsPerPage);
