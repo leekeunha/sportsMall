@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "json": "json-server --p 3500 ./src/app/client/fixture/homeData.js"
+    "json": "json-server --p 3500 ./src/app/client/fixture/data.js"
   },
   "private": true,
   "dependencies": {

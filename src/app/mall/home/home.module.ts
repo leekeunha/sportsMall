@@ -4,11 +4,10 @@ import { HomeComponent } from './home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdCarouselBanner } from './carouselBanner.component';
 import { NgbdCarouselLatest } from './carouselLatest.component';
-import { ProductsModule } from '../products/products.module';
-import { ProductsRowComponent } from '../products/productsRow.component';
+import { ProductModule } from '../product/product.module';
 
 @NgModule({
-    imports: [BrowserModule, NgbModule, ProductsModule],
+    imports: [BrowserModule, NgbModule, ProductModule],
     declarations: [HomeComponent, NgbdCarouselBanner, NgbdCarouselLatest],
     exports: [HomeComponent]
 })

@@ -1,28 +1,36 @@
 ﻿import { Injectable } from '@angular/core';
 import { Product } from './product.model';
 import { RestDataSource } from './rest.datasource';
-import { Home } from './home.model';
 import { Banner } from './banner.model';
+import { Observable } from 'rxjs';
 
 @Injectable()
-export class Model {
-    private home: Home = new Home();
-    //private locator = (p: Product, id: number) => p.productId == id;
+export class Repository {
 
     constructor(private dataSource: RestDataSource) {
-        this.dataSource.getHome().subscribe(home => this.home = home);
+    }
+
+    getProducts(): Observable<Product[]> {
+        return this.dataSource.getProducts();
     }
 
     getBannerList(): Banner[] {
-        return this.home.bannerList;
+        return this.dataSource.getBannerList();
     }
 
-    getLatestGarmentList(): Product[] {
-        return this.home.latestGarmentList;
+    get LatestGarmentList(): Product[] {
+        return this.dataSource.getLatestGarmentList();
     }
 
-    //getProduct(id: number): Product {
-    //    return this.products.find(p => this.locator(p, id));
-    //}
+    getSlideProductList() {
+        return this.dataSource.getSlideProductsList();
+    }
 
+    getBannerImageUrlList() {
+        return this.dataSource.getBannerImageUrlList();
+    }
+
+    getSelectedCategoryProductList(category: string): Product[] {
+        return this.dataSource.getSelectedCategoryProductList(category);
+    }
 }

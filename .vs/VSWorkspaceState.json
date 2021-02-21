@@ -6,13 +6,12 @@
     "\\src\\app\\client",
     "\\src\\app\\client\\fixture",
     "\\src\\app\\mall",
-    "\\src\\app\\mall\\home",
+    "\\src\\app\\mall\\categoryProducts",
+    "\\src\\app\\models",
     "\\src\\assets",
     "\\src\\assets\\images",
-    "\\src\\assets\\images\\home",
-    "\\src\\assets\\images\\home\\latestGarment",
-    "\\src\\environments"
+    "\\src\\assets\\images\\appHeader"
   ],
-  "SelectedNode": "\\src\\app\\mall\\home\\carouselLatest.component.html",
+  "SelectedNode": "\\src\\styles.css",
   "PreviewInSolutionExplorer": false
 }

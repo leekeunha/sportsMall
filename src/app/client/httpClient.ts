@@ -1,54 +1,54 @@
-import { Injectable } from "@angular/core";
-import { ParentCategory } from '../models/parentCategory.model';
-import { Product } from '../models/product.model';
-import * as productsData from './fixture/productsData.js';
-import * as categoriesData from './fixture/parentCategoriesData.js';
-import * as homeData from './fixture/homeData.js';
-import { Home } from '../models/home.model';
+//import { Injectable } from "@angular/core";
+//import { ParentCategory } from '../models/parentCategory.model';
+//import { Product } from '../models/product.model';
+//import * as productsData from './fixture/productsData.js';
+//import * as categoriesData from './fixture/parentCategoriesData.js';
+//import * as homeData from './fixture/data.js';
+//import { Home } from '../models/home.model';
 
-@Injectable()
-export class HttpClient {
+//@Injectable()
+//export class HttpClient {
 
-    getProducts() : Product[] {
-        let productList: Product[] = <Product[]>productsData.products;
-        return productList;
-    }
+//    getProducts() : Product[] {
+//        let productList: Product[] = <Product[]>productsData.products;
+//        return productList;
+//    }
 
-    getParentCategories(): ParentCategory[] {
-        let parentCategoryList: ParentCategory[] = <ParentCategory[]>categoriesData.parentCategories;
-        return parentCategoryList;
-    }
+//    getParentCategories(): ParentCategory[] {
+//        let parentCategoryList: ParentCategory[] = <ParentCategory[]>categoriesData.parentCategories;
+//        return parentCategoryList;
+//    }
 
-    getProductById(productId: number): Product {
-        let productList: Product[] = this.getProducts();
-        return this.filterByProductId(productList, productId);
-    }
+//    getProductById(productId: number): Product {
+//        let productList: Product[] = this.getProducts();
+//        return this.filterByProductId(productList, productId);
+//    }
 
-    filterByProductId(productList: Product[], productId: number): Product {
-        return productList.find(p => p.productId == productId);
-    }
+//    filterByProductId(productList: Product[], productId: number): Product {
+//        return productList.find(p => p.productId == productId);
+//    }
 
-    filterByParentCategoryId(productList: Product[], parentCategoryId: number): Product[] {
-        return productList.filter(p => p.parentCategoryId == parentCategoryId);
-    }
+//    filterByParentCategoryId(productList: Product[], parentCategoryId: number): Product[] {
+//        return productList.filter(p => p.parentCategoryId == parentCategoryId);
+//    }
 
-    filterByName(productList: Product[], productName: string): Product {
-        return productList.find(p => p.productName == productName);
-    }
+//    filterByName(productList: Product[], productName: string): Product {
+//        return productList.find(p => p.productName == productName);
+//    }
 
-    filterByPriceRange(productList: Product[], minValue: number, maxValue: number): Product[] {
+//    filterByPriceRange(productList: Product[], minValue: number, maxValue: number): Product[] {
 
-        return productList.filter(p => {
-             return p.price >= minValue && p.price <= maxValue
-        });
-    }
+//        return productList.filter(p => {
+//             return p.price >= minValue && p.price <= maxValue
+//        });
+//    }
 
-    getHome(): Home {
+//    getHome(): Home {
 
-        const home: Home = new Home();
-        home.bannerList = homeData.bannerList;
-        home.latestGarmentList = homeData.latestGarmentList;
+//        const home: Home = new Home();
+//        home.bannerList = homeData.bannerList;
+//        home.latestGarmentList = homeData.latestGarmentList;
 
-        return home;
-    }
-};
+//        return home;
+//    }
+//};

@@ -1,7 +1,11 @@
-<ngb-carousel *ngIf="latestGarmentList">
-    <ng-template ngbSlide *ngFor="let item of slideList">
+<ngb-carousel *ngIf="slideProductsList">
+    <ng-template ngbSlide *ngFor="let slideProducts of slideProductsList">
         <div class="picsum-img-wrapper">
-            <products-row [model]="item"></products-row>
+            <div class="container">
+                <div class="row">
+                    <product class="col" *ngFor="let item of slideProducts" [model]="item"></product>
+                </div>
+            </div>
         </div>
     </ng-template>
     <div class="swiper-scrollbar">
