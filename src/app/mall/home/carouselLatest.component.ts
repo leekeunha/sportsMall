@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Repository } from '../../models/repository.model';
+import { ProductRepository } from '../../models/productRepository.model';
 
 @Component({
     selector: 'ngbd-carousel-latest',
@@ -10,7 +10,7 @@ export class NgbdCarouselLatest {
 
     public slideProductsList = [];
 
-    constructor(private repository: Repository) {
+    constructor(private repository: ProductRepository) {
         this.slideProductsList = repository.getSlideProductList();
     }
 }

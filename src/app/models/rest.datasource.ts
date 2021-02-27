@@ -9,8 +9,8 @@ import { Category } from './category.model';
 
 export const REST_URL = new InjectionToken("rest_url");
 const HOME = "home";
-const PRODUCTLIST = "productList";
-const PARENTCATEGORYLIST = "parentCategoryList";
+const PRODUCT_LIST = "productList";
+const PARENT_CATEGORY_LIST = "parentCategoryList";
 
 @Injectable()
 export class RestDataSource {
@@ -20,7 +20,6 @@ export class RestDataSource {
     private bannerList = new Array<Banner>();
     private latestGarmentList = new Array<Product>();
     private bannerImageUrlList = [];
-    private parentCategoryProductList : Product[];
     private productList: Product[] = new Array();
     private parentCategoryList: ParentCategory[] = new Array();
     private categoryList: Category[] = new Array();
@@ -50,11 +49,11 @@ export class RestDataSource {
     }
 
     getProducts(): Observable<Product[]> {
-        return this.http.get<Product[]>(`${this.url}/${PRODUCTLIST}`);
+        return this.http.get<Product[]>(`${this.url}/${PRODUCT_LIST}`);
     }
 
     getParentCategories(): Observable <ParentCategory[]> {
-        return this.http.get<ParentCategory[]>(`${this.url}/${PARENTCATEGORYLIST}`);
+        return this.http.get<ParentCategory[]>(`${this.url}/${PARENT_CATEGORY_LIST}`);
     }
 
     getSlideProductsList() {
@@ -86,31 +85,31 @@ export class RestDataSource {
         });
     }
 
-    getProductListInParentCategory(parentCategory: string): Product[]{
-
-        switch (parentCategory) {
+    getProductsByParentCategoryName(parentCategoryName: string): Product[]{
+        let productList :Product[];
+        switch (parentCategoryName) {
             case "shoes":
-                this.parentCategoryProductList = this.filterProductsByParentCategoryId(1);
+                productList = this.filterProductsByParentCategoryId(1);
                 break;
             case "tops":
-                this.parentCategoryProductList = this.filterProductsByParentCategoryId(2);
+                productList = this.filterProductsByParentCategoryId(2);
                 break;
             case "pants":
-                this.parentCategoryProductList = this.filterProductsByParentCategoryId(3);
+                productList = this.filterProductsByParentCategoryId(3);
                 break;
             case "swimwear":
-                this.parentCategoryProductList = this.filterProductsByParentCategoryId(4);
+                productList = this.filterProductsByParentCategoryId(4);
                 break;
             case "accesories":
-                this.parentCategoryProductList = this.filterProductsByParentCategoryId(5);
+                productList = this.filterProductsByParentCategoryId(5);
                 break;
             default:
                 break;
         }
-        return this.parentCategoryProductList;
+        return productList;
     }
 
-    getCategoryListInParentCategory(parentCategory: string): Category[] {
+    getChildCategories(parentCategory: string): Category[] {
 
         switch (parentCategory) {
             case "shoes":
@@ -134,21 +133,17 @@ export class RestDataSource {
         return this.categoryList;
     }
 
-    getProductsByCategoryIdInParent(categoryId: number): Product[] {
-        return this.filterProductsByCategoryIdInParent(categoryId);
+    findCategoriesByParentCategoryId(parentCategoryId: number): Category[] {
+        const parentCategory: ParentCategory = this.parentCategoryList.find(p => p.id == parentCategoryId);
+        return parentCategory.categoryList;
     }
 
     filterProductsByParentCategoryId(parentCategoryId: number): Product[] {
         return this.productList.filter(p => p.parentCategoryId == parentCategoryId);
     }
 
-    findCategoriesByParentCategoryId(parentCategoryId: number): Category[] {
-        let parentCategory: ParentCategory = this.parentCategoryList.find(p => p.id == parentCategoryId);
-        return parentCategory.categoryList;
+    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): Product[] {
+        const products: Product[] = this.getProductsByParentCategoryName(parentCategoryName)
+        return products.filter(p => p.categoryId == childCategoryId);
     }
-
-    filterProductsByCategoryIdInParent(categoryId: number): Product[] {
-        return this.parentCategoryProductList.filter(p => p.categoryId == categoryId);
-    }
-
 }

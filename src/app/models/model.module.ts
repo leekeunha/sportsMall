@@ -1,11 +1,13 @@
 ﻿import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RestDataSource, REST_URL } from './rest.datasource';
-import { Repository } from './repository.model';
+import { HomeRepository } from './homeRepository.model';
+import { CategoryRepository } from './categoryRepository.model';
+import { ProductRepository } from './productRepository.model';
 
 @NgModule({
     imports: [HttpClientModule],
-    providers: [Repository, RestDataSource,
+    providers: [HomeRepository, CategoryRepository, ProductRepository, RestDataSource,
         {
             provide: REST_URL, useValue: `http://${location.hostname}:3500`
         }]

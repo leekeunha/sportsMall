@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Repository } from '../../models/repository.model';
+import { HomeRepository } from '../../models/homeRepository.model';
 
 @Component({
     selector: 'ngbd-carousel-banner',
@@ -10,7 +10,7 @@ export class NgbdCarouselBanner {
 
     public images = [];
 
-    constructor(private repository: Repository) {
+    constructor(private repository: HomeRepository) {
         this.images = repository.getBannerImageUrlList();
     }
 }

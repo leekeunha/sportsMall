@@ -3,7 +3,7 @@
         <div class="col-2 mt-5">
             <ul class="nav flex-column h6 pl-5 mb-2" *ngFor="let item of categoryList">
                 <li class="nav-item">
-                    <a (click)="getProductsByCategoryIdInParentCategory(item.categoryId)">{{item.categoryName}}</a>
+                    <a (click)="getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName,item.categoryId)">{{item.categoryName}}</a>
                 </li>
             </ul>
         </div>
