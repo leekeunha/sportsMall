@@ -1,4 +1,4 @@
-<img class="img-fluid" [src]="imageUrl" [alt]="imageUrl">
+<a [routerLink]="['/product',productId]"><img class="img-fluid" [src]="imageUrl" [alt]="imageUrl"></a>
 <div class="row">
     <span class="col-8">{{productName}}</span>
     <span class="col-4 text-right">{{price|currency : "USD" : "symbol" : "1.0-0"}}</span>

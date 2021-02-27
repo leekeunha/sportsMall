@@ -10,9 +10,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductModule } from './mall/product/product.module';
 import { CounterDirective } from './directives/counter.directive';
 import { CategoryProductsComponent } from './mall/categoryProducts/CategoryProducts.componenet';
+import { ProductDetailModule } from './mall/productDetail/productDetail.module';
 
 @NgModule({
-    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule],
+    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule, ProductDetailModule],
     declarations: [AppComponent, AppHeaderComponent, AppFooterComponent, CategoryProductsComponent, CounterDirective],
     bootstrap: [AppComponent]
 })

@@ -23,4 +23,8 @@ export class ProductComponent {
     get price(): number {
         return this.model.price;
     }
+
+    get productId(): number {
+        return this.model.productId;
+    }
 }
