@@ -3,15 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\client",
-    "\\src\\app\\client\\fixture",
     "\\src\\app\\mall",
+    "\\src\\app\\mall\\appfooter",
+    "\\src\\app\\mall\\appheader",
     "\\src\\app\\mall\\categoryProducts",
-    "\\src\\app\\models",
+    "\\src\\app\\mall\\product",
     "\\src\\assets",
-    "\\src\\assets\\images",
-    "\\src\\assets\\images\\appHeader"
+    "\\src\\assets\\images"
   ],
-  "SelectedNode": "\\src\\styles.css",
+  "SelectedNode": "\\src\\app\\mall\\product\\product.component.html",
   "PreviewInSolutionExplorer": false
 }

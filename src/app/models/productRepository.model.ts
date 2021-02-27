@@ -1,21 +1,16 @@
-﻿import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Product } from './product.model';
 import { RestDataSource } from './rest.datasource';
-import { Banner } from './banner.model';
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class Repository {
+export class ProductRepository {
 
     constructor(private dataSource: RestDataSource) {
     }
 
     getProducts(): Observable<Product[]> {
         return this.dataSource.getProducts();
-    }
-
-    getBannerList(): Banner[] {
-        return this.dataSource.getBannerList();
     }
 
     get LatestGarmentList(): Product[] {
@@ -26,11 +21,11 @@ export class Repository {
         return this.dataSource.getSlideProductsList();
     }
 
-    getBannerImageUrlList() {
-        return this.dataSource.getBannerImageUrlList();
+    getProductsByParentCategoryName(parentCategoryName: string) {
+        return this.dataSource.getProductsByParentCategoryName(parentCategoryName);
     }
 
-    getSelectedCategoryProductList(category: string): Product[] {
-        return this.dataSource.getSelectedCategoryProductList(category);
+    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): Product[] {
+        return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
     }
 }

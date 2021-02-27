@@ -4,3 +4,16 @@
         max-width: 1400px !important;
     }
 }
+
+.ml-6
+{
+    margin-left: 4rem !important;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+a {
+    cursor: pointer;
+}

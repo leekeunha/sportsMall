@@ -1,7 +1,9 @@
-﻿import { Component, Input } from "@angular/core";
-import { ActivatedRoute } from '@angular/router';
-import { Repository } from '../../models/repository.model';
+﻿import { Component, OnDestroy, OnInit } from "@angular/core";
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Product } from '../../models/product.model';
+import { Category } from '../../models/category.model';
+import { CategoryRepository } from '../../models/categoryRepository.model';
+import { ProductRepository } from '../../models/productRepository.model';
 
 @Component({
     selector: "category-products",
@@ -10,21 +12,35 @@ import { Product } from '../../models/product.model';
 })
 export class CategoryProductsComponent {
 
-    public cateogryProductList: Product[];
+    public productList: Product[];
+    public cateogryParentCategoryId: number;
     public productsPerPage = 9;
     public productsPerRow = 3;
     public selectedPage = 1;
+    public categoryList: Category[];
+    public parentCategoryName: string;
 
-    constructor(private repository: Repository, activeRoute: ActivatedRoute) {
-        let category: string = activeRoute.snapshot.url[1].path;
-        repository.getProducts().subscribe(data => {
-            this.cateogryProductList = repository.getSelectedCategoryProductList(category);
+    constructor(private categoryRepository: CategoryRepository, private productRepository: ProductRepository, activeRoute: ActivatedRoute, private router: Router) {
+
+        this.parentCategoryName = activeRoute.snapshot.url[1].path;
+
+        this.router.events.subscribe((e: any) => {
+            this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
+            this.categoryList = categoryRepository.getChildCategories(this.parentCategoryName);
+        });
+
+        productRepository.getProducts().subscribe(data => {
+            this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
+        });
+
+        categoryRepository.getParentCategories().subscribe(data => {
+            this.categoryList = categoryRepository.getChildCategories(this.parentCategoryName);
         });
     }
-
+    
     get products(): Product[] {
         let pageIndex = (this.selectedPage - 1) * this.productsPerPage;
-        return this.cateogryProductList.slice(pageIndex, pageIndex + this.productsPerPage);
+        return this.productList.slice(pageIndex, pageIndex + this.productsPerPage);
     }
 
     changePage(newPage: number) {
@@ -32,6 +48,10 @@ export class CategoryProductsComponent {
     }
 
     get pageCount(): number {
-        return Math.ceil(this.cateogryProductList.length / this.productsPerPage);
+        return Math.ceil(this.productList.length / this.productsPerPage);
+    }
+
+    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId): void {
+        this.productList = this.productRepository.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
     }
 }
