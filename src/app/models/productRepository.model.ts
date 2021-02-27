@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Product } from './product.model';
 import { RestDataSource } from './rest.datasource';
 import { Observable } from 'rxjs';
+import { ProductDetail } from './productDetail.model';
 
 @Injectable()
 export class ProductRepository {
@@ -27,5 +28,13 @@ export class ProductRepository {
 
     getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): Product[] {
         return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
+    }
+
+    getProduct(productId: number) :Product{
+        return this.dataSource.getProduct(productId);
+    }
+
+    getProductDetailList(): Observable<ProductDetail[]> {
+        return this.dataSource.getProductDetailList();
     }
 }
