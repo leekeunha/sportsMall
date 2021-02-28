@@ -1,14 +1,16 @@
 <div class="container mt-5 p-5">
     <div class="row">
         <span class="col-8">
-            <img *ngFor="let imgUrl of imgUrlList;let index = index" class="m-3" [src]="imgUrl">
-            <div *ngIf="index % productsPerRow == 2" class="row"></div>
+            <span *ngFor="let imgUrl of imgUrlList;let index = index">
+                <img class="m-3" [src]="imgUrl">
+                <div *ngIf="index % productsPerRow == 1" class="row"></div>
+            </span>
         </span>
         <div class="col-4">
             <div class="col h4">{{product.productName}}</div>
             <div class="col h5 text-right mb-5">{{product.price|currency : "USD" : "symbol" : "1.0-0"}}</div>
             <button class="btn col btn-dark rounded-pill">Buy Now</button>
-            <button class="btn col btn-dark rounded-pill mt-2">Add to Bag</button>
+            <button class="btn col btn-dark rounded-pill mt-2" (click)="addProductToCart(product)">Add to Bag</button>
         </div>
     </div>
 </div>

@@ -27,7 +27,7 @@ export class ProductRepository {
     }
 
     getProductsByParentCategoryNameAndChildCategoryId(productList: Product[], parentCategoryName: string, childCategoryId: number): Product[] {
-        return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(productList,parentCategoryName, childCategoryId);
+        return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(productList, parentCategoryName, childCategoryId);
     }
 
     getProduct(productList:Product[], productId: number) :Product{

@@ -11,10 +11,13 @@ import { ProductModule } from './mall/product/product.module';
 import { CounterDirective } from './directives/counter.directive';
 import { CategoryProductsComponent } from './mall/categoryProducts/CategoryProducts.componenet';
 import { ProductDetailModule } from './mall/productDetail/productDetail.module';
+import { CartSummaryComponent } from './mall/cartSummary/cartSummary.component';
+import { CheckoutComponent } from './mall/checkout/checkout.component';
+import { CartDetailComponent } from './mall/cartDetail/cartDetail.component';
 
 @NgModule({
     imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule, ProductDetailModule],
-    declarations: [AppComponent, AppHeaderComponent, AppFooterComponent, CategoryProductsComponent, CounterDirective],
+    declarations: [AppComponent, AppHeaderComponent, AppFooterComponent, CategoryProductsComponent, CounterDirective, CartSummaryComponent, CartDetailComponent, CheckoutComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
