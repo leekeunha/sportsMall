@@ -12,8 +12,8 @@ export class CategoryRepository {
     constructor(private dataSource: RestDataSource) {
     }
 
-    getChildCategories(parentCategoryName: string): Category[] {
-        return this.dataSource.getChildCategories(parentCategoryName);
+    getChildCategories(parentCategoryList: ParentCategory[], parentCategoryName: string): Category[] {
+        return this.dataSource.getChildCategories(parentCategoryList,parentCategoryName);
     }
 
     getParentCategories(): Observable<ParentCategory[]> {

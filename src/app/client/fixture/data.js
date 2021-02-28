@@ -471,14 +471,14 @@ module.exports = function () {
             },
             {
                 productId: 2,
-                imageList: ["/assets/images/products/Kyrie_Low_3_1.png",
-                    "/assets/images/products/Kyrie_Low_3_2.png",
-                    "/assets/images/products/Kyrie_Low_3_3.png",
-                    "/assets/images/products/Kyrie_Low_3_4.png"]
+                imageList: ["/assets/images/products/Zoom_Freak_2_Letter_Bro_1.png",
+                    "/assets/images/products/Zoom_Freak_2_Letter_Bro_2.png",
+                    "/assets/images/products/Zoom_Freak_2_Letter_Bro_3.png",
+                    "/assets/images/products/Zoom_Freak_2_Letter_Bro_4.png"]
             },
             {
                 productId: 3,
-                imageList: ["/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_1.png",
+                imageList: ["/assets/images/products/Nike_Mercurial_Superfly_8_Elite_FG_1.png",
                     "/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_2.png",
                     "/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_3.png",
                     "/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_4.png"]
@@ -632,16 +632,14 @@ module.exports = function () {
             {
                 productId: 25,
                 imageList: ["/assets/images/products/FC_Barcelona_Pitch_1.png",
-                    "/assets/images/products/FC_Barcelona_Pitch_2.png",
-                    "/assets/images/products/FC_Barcelona_Pitch_3.png",
-                    "/assets/images/products/FC_Barcelona_Pitch_4.png"]
+                    "/assets/images/products/FC_Barcelona_Pitch_2.png"
+                    ]
             },
             {
                 productId: 26,
                 imageList: ["/assets/images/products/Nike_Vapor_Jet_6_1.png",
-                    "/assets/images/products/Nike_Vapor_Jet_6_2.png",
-                    "/assets/images/products/Nike_Vapor_Jet_6_3.png",
-                    "/assets/images/products/Nike_Vapor_Jet_6_4.png"]
+                    "/assets/images/products/Nike_Vapor_Jet_6_2.png"
+                    ]
             }
         ]
     }

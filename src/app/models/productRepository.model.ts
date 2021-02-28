@@ -22,16 +22,16 @@ export class ProductRepository {
         return this.dataSource.getSlideProductsList();
     }
 
-    getProductsByParentCategoryName(parentCategoryName: string) {
-        return this.dataSource.getProductsByParentCategoryName(parentCategoryName);
+    getProductsByParentCategoryName(productList: Product[], parentCategoryName: string) {
+        return this.dataSource.getProductsByParentCategoryName(productList, parentCategoryName);
     }
 
-    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): Product[] {
-        return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
+    getProductsByParentCategoryNameAndChildCategoryId(productList: Product[], parentCategoryName: string, childCategoryId: number): Product[] {
+        return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(productList,parentCategoryName, childCategoryId);
     }
 
-    getProduct(productId: number) :Product{
-        return this.dataSource.getProduct(productId);
+    getProduct(productList:Product[], productId: number) :Product{
+        return this.dataSource.getProduct(productList, productId);
     }
 
     getProductDetailList(): Observable<ProductDetail[]> {

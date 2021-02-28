@@ -10,21 +10,24 @@ import { ProductRepository } from '../../models/productRepository.model';
     templateUrl: "./productDetail.component.html"
 })
 export class ProductDetailComponent {
-    productDetailList: ProductDetail[];
+    productDetail: ProductDetail;
     product: Product;
+    imgUrlList: string[] = new Array<string>();
 
-    constructor(productDetailRepository: ProductDetailRepository, productRepository: ProductRepository, activeRoute: ActivatedRoute,) {
-        debugger;
-        const productId :number = Number(activeRoute.snapshot.url[1].path);
-        debugger;
-        productDetailRepository.getProductDetailList().subscribe(productDetailList => {
-            debugger;
-            this.productDetailList = productDetailList;
+    constructor(productDetailRepository: ProductDetailRepository, productRepository: ProductRepository, activeRoute: ActivatedRoute, ) {
+
+        const productId: number = Number(activeRoute.snapshot.url[1].path);
+
+        productDetailRepository.getProductDetailList().subscribe(detailList => {
+            
+            const productDetails: ProductDetail[] = detailList;
+            this.productDetail = productDetailRepository.getProductDetail(productDetails, productId);
+            this.imgUrlList = this.productDetail.imageList;
         });
 
-        this.product = productRepository.getProduct(productId);
-        console.log(this.product);
-        debugger;
+        productRepository.getProducts().subscribe(productList => {
+            this.product = productRepository.getProduct(productList, productId);
+        });
 
     }
 

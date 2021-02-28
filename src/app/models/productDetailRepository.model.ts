@@ -14,20 +14,8 @@ export class ProductDetailRepository {
         return this.dataSource.getProductDetailList();
     }
 
+    getProductDetail(productDetailList: ProductDetail[], productId: number): ProductDetail {
+        return this.dataSource.getProductDetail(productDetailList, productId);
+    }
 
-    //get LatestGarmentList(): Product[] {
-    //    return this.dataSource.getLatestGarmentList();
-    //}
-
-    //getSlideProductList() {
-    //    return this.dataSource.getSlideProductsList();
-    //}
-
-    //getProductsByParentCategoryName(parentCategoryName: string) {
-    //    return this.dataSource.getProductsByParentCategoryName(parentCategoryName);
-    //}
-
-    //getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): Product[] {
-    //    return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
-    //}
 }

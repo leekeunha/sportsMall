@@ -1,19 +1,17 @@
 <div class="container mt-5 p-5">
     <div class="row">
         <span class="col-8">
-            <img class="img-fluid m-3" src="/assets/images/products/Kyrie_Low_3_1.png">
-            <img class="img-fluid m-3" src="/assets/images/products/Kyrie_Low_3_2.png">
-            <span class="row"></span>
-            <img class="img-fluid m-3" src="/assets/images/products/Kyrie_Low_3_3.png">
-            <img class="img-fluid m-3" src="/assets/images/products/Kyrie_Low_3_4.png">
+            <img *ngFor="let imgUrl of imgUrlList;let index = index" class="m-3" [src]="imgUrl">
+            <div *ngIf="index % productsPerRow == 2" class="row"></div>
         </span>
         <div class="col-4">
-            <div class="col">name</div>
-            <div class="col">price</div>
-            <div class="col">description</div>
+            <div class="col h4">{{product.productName}}</div>
+            <div class="col h5 text-right mb-5">{{product.price|currency : "USD" : "symbol" : "1.0-0"}}</div>
             <button class="btn col btn-dark rounded-pill">Buy Now</button>
             <button class="btn col btn-dark rounded-pill mt-2">Add to Bag</button>
         </div>
     </div>
 </div>
+
+
 
