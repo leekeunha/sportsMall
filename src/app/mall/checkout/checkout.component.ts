@@ -12,7 +12,6 @@ export class CheckoutComponent {
     submitted: boolean = false;
 
     constructor(public repository: OrderRepository, public order: Order) {
-        debugger;
     }
 
     submitOrder(form: NgForm) {

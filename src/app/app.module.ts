@@ -9,15 +9,15 @@ import { AppFooterComponent } from './mall/appfooter/appFooter.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductModule } from './mall/product/product.module';
 import { CounterDirective } from './directives/counter.directive';
-import { CategoryProductsComponent } from './mall/categoryProducts/CategoryProducts.componenet';
 import { ProductDetailModule } from './mall/productDetail/productDetail.module';
 import { CartSummaryComponent } from './mall/cartSummary/cartSummary.component';
 import { CheckoutComponent } from './mall/checkout/checkout.component';
 import { CartDetailComponent } from './mall/cartDetail/cartDetail.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule} from '@angular/forms';
+import { CategoryProductsComponent } from './mall/categoryProducts/categoryProducts.component';
 
 @NgModule({
-    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule, ProductDetailModule, FormsModule, ReactiveFormsModule],
+    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule, ProductDetailModule, FormsModule],
     declarations: [AppComponent, AppHeaderComponent, AppFooterComponent, CategoryProductsComponent, CounterDirective, CartSummaryComponent, CartDetailComponent, CheckoutComponent],
     bootstrap: [AppComponent]
 })

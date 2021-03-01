@@ -1,12 +1,11 @@
-﻿import { Component, OnDestroy, OnInit } from "@angular/core";
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+﻿import { Component} from "@angular/core";
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../../models/product.model';
 import { Category } from '../../models/category.model';
 import { CategoryRepository } from '../../models/categoryRepository.model';
 import { ProductRepository } from '../../models/productRepository.model';
 
 @Component({
-    selector: "category-products",
     templateUrl: "./categoryProducts.component.html",
     styleUrls: ['./categoryProducts.component.css']
 })

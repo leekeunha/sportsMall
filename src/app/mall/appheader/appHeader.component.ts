@@ -8,6 +8,5 @@ import { Cart } from '../../models/cart.model';
 })
 export class AppHeaderComponent {
     constructor(public cart: Cart) {
-        debugger;
     }
 }
