@@ -14,9 +14,10 @@ import { ProductDetailModule } from './mall/productDetail/productDetail.module';
 import { CartSummaryComponent } from './mall/cartSummary/cartSummary.component';
 import { CheckoutComponent } from './mall/checkout/checkout.component';
 import { CartDetailComponent } from './mall/cartDetail/cartDetail.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule, ProductDetailModule],
+    imports: [BrowserModule, ModelModule, HomeModule, routing, NgbModule, ProductModule, ProductDetailModule, FormsModule, ReactiveFormsModule],
     declarations: [AppComponent, AppHeaderComponent, AppFooterComponent, CategoryProductsComponent, CounterDirective, CartSummaryComponent, CartDetailComponent, CheckoutComponent],
     bootstrap: [AppComponent]
 })

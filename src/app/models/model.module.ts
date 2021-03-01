@@ -6,10 +6,12 @@ import { CategoryRepository } from './categoryRepository.model';
 import { ProductRepository } from './productRepository.model';
 import { ProductDetailRepository } from './productDetailRepository.model';
 import { Cart } from './cart.model';
+import { OrderRepository } from './orderRepositoy.model';
+import { Order } from './order.model';
 
 @NgModule({
     imports: [HttpClientModule],
-    providers: [HomeRepository, CategoryRepository, ProductRepository, RestDataSource, ProductDetailRepository, Cart,
+    providers: [HomeRepository, CategoryRepository, ProductRepository, RestDataSource, ProductDetailRepository, Cart, Order, OrderRepository,
         {
             provide: REST_URL, useValue: `http://${location.hostname}:3500`
         }]

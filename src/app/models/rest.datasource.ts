@@ -7,6 +7,7 @@ import { Banner } from './banner.model';
 import { ParentCategory } from './parentCategory.model';
 import { Category } from './category.model';
 import { ProductDetail } from './productDetail.model';
+import { Order } from './order.model';
 
 export const REST_URL = new InjectionToken("rest_url");
 const HOME = "home";
@@ -149,5 +150,9 @@ export class RestDataSource {
 
     getProductDetail(productDetailList: ProductDetail[], productId: number): ProductDetail {
         return productDetailList.find(p => p.productId == productId);
+    }
+
+    saveOrder(order: Order): Observable<Order> {
+        return this.http.post<Order>(REST_URL + "/orders", order);
     }
 }

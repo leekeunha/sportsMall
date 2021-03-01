@@ -15,6 +15,7 @@ export class ProductDetailComponent {
     product: Product;
     imgUrlList: string[] = new Array<string>();
     public productsPerRow = 2;
+
     constructor(productDetailRepository: ProductDetailRepository, productRepository: ProductRepository, activeRoute: ActivatedRoute, private cart: Cart, private router:Router) {
 
         const productId: number = Number(activeRoute.snapshot.url[1].path);
@@ -33,6 +34,7 @@ export class ProductDetailComponent {
 
     addProductToCart(product: Product) {
         this.cart.addLine(product);
-        //this.router.navigateByUrl("/cart");
+        //toast 메시지 띄우기
+
     }
 }
