@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "preinstall": "npm install -g angular-cli",
+    "postinstall": "ng build --aot --prod",
     "json": "json-server --p 3500 ./src/app/client/fixture/data.js"
   },
   "private": true,
