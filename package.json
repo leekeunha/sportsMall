@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "postinstall": "npm run build",
-    "start": "json-server --p $PORT ./src/app/client/fixture/data.js",
+    "start": "json-server --p process.env.PORT ./src/app/client/fixture/data.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
