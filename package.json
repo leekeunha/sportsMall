@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "postinstall": "json-server --p $PORT ./src/app/client/fixture/data.js",
-    "start": "ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
+    "postinstall": "ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
+    "start": "json-server --p $PORT ./src/app/client/fixture/data.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
