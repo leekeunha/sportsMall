@@ -3,12 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "json-server --p --port $PORT --host 0.0.0.1 --disable-host-check ./src/app/client/fixture/data.js && ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
+    "start": "json-server --p 3500 ./src/app/client/fixture/data.js && ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "json": "json-server --p 3500 ./src/app/client/fixture/data.js"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
