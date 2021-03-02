@@ -15,10 +15,10 @@ export class CounterDirective {
         this.container.clear();
         for (var i = 0; i < this.counter; i++) {
             this.container.createEmbeddedView(this.template, new CounterDirectiveContext(i + 1));
-            }
         }
     }
+}
 
-    class CounterDirectiveContext {
-        constructor(public $implicit: any) { }
+class CounterDirectiveContext {
+    constructor(public $implicit: any) { }
 }

@@ -1,12 +1,11 @@
-﻿import { Component, OnDestroy, OnInit } from "@angular/core";
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+﻿import { Component} from "@angular/core";
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../../models/product.model';
 import { Category } from '../../models/category.model';
 import { CategoryRepository } from '../../models/categoryRepository.model';
 import { ProductRepository } from '../../models/productRepository.model';
 
 @Component({
-    selector: "category-products",
     templateUrl: "./categoryProducts.component.html",
     styleUrls: ['./categoryProducts.component.css']
 })
@@ -24,21 +23,16 @@ export class CategoryProductsComponent {
 
         this.parentCategoryName = activeRoute.snapshot.url[1].path;
 
-        this.router.events.subscribe((e: any) => {
-            this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
-            this.categoryList = categoryRepository.getChildCategories(this.parentCategoryName);
+       productRepository.getProducts().subscribe(list => {
+            this.productList = productRepository.getProductsByParentCategoryName(list, this.parentCategoryName);
         });
 
-        productRepository.getProducts().subscribe(data => {
-            this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
-        });
-
-        categoryRepository.getParentCategories().subscribe(data => {
-            this.categoryList = categoryRepository.getChildCategories(this.parentCategoryName);
+        categoryRepository.getParentCategories().subscribe(parentCategoryList => {
+            this.categoryList = categoryRepository.getChildCategories(parentCategoryList, this.parentCategoryName);
         });
     }
     
-    get products(): Product[] {
+    get productsInPage(): Product[] {
         let pageIndex = (this.selectedPage - 1) * this.productsPerPage;
         return this.productList.slice(pageIndex, pageIndex + this.productsPerPage);
     }
@@ -51,7 +45,9 @@ export class CategoryProductsComponent {
         return Math.ceil(this.productList.length / this.productsPerPage);
     }
 
-    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId): void {
-        this.productList = this.productRepository.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
+    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): void {
+        this.productRepository.getProducts().subscribe(productList => {
+            this.productList = this.productRepository.getProductsByParentCategoryNameAndChildCategoryId(productList, parentCategoryName, childCategoryId);
+        });
     }
 }
