@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port $PORT --host 0.0.0.0 --disable-host-check && json-server --p $PORT ./src/app/client/fixture/data.js",
+    "start": "json-server --p 3500 ./src/app/client/fixture/data.js && ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
