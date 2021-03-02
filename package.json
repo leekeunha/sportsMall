@@ -11,6 +11,10 @@
     "json": "json-server --p 3500 ./src/app/client/fixture/data.js"
   },
   "private": true,
+  "engines": {
+    "node": "12.15.0",
+    "npm": "6.13.4"
+  },
   "dependencies": {
     "@angular-devkit/build-angular": "^0.900.7",
     "@angular/cli": "~9.0.1",
@@ -31,10 +35,6 @@
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
     "typescript": "~3.7.5"
-  },
-  "engines": {
-    "node": "12.15.0",
-    "npm": "6.13.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.900.7",
