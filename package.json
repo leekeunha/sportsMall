@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "json": "json-server --p $PORT ./src/app/client/fixture/data.js"
+    "json": "json-server --p $PORT --host 0.0.0.0 --disable-host-check ./src/app/client/fixture/data.js"
   },
   "private": true,
   "engines": {
