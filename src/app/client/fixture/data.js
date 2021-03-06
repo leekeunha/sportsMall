@@ -467,179 +467,256 @@ module.exports = function () {
                 imageList: ["/assets/images/products/Kyrie_Low_3_1.png",
                     "/assets/images/products/Kyrie_Low_3_2.png",
                     "/assets/images/products/Kyrie_Low_3_3.png",
-                    "/assets/images/products/Kyrie_Low_3_4.png"]
+                    "/assets/images/products/Kyrie_Low_3_4.png"],
+                price: 110,
+                numOfColors: 1,
+                description: "Kyrie Low 3",
             },
             {
                 productId: 2,
                 imageList: ["/assets/images/products/Zoom_Freak_2_Letter_Bro_1.png",
                     "/assets/images/products/Zoom_Freak_2_Letter_Bro_2.png",
                     "/assets/images/products/Zoom_Freak_2_Letter_Bro_3.png",
-                    "/assets/images/products/Zoom_Freak_2_Letter_Bro_4.png"]
+                    "/assets/images/products/Zoom_Freak_2_Letter_Bro_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "This is Zoom Freak 2 'Letter Bro'",
             },
             {
                 productId: 3,
                 imageList: ["/assets/images/products/Nike_Mercurial_Superfly_8_Elite_FG_1.png",
                     "/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_2.png",
                     "/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_3.png",
-                    "/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_4.png"]
+                    "/assets/images/products/Nike_Mercurial_Superfly8_Elite_FG_4.png"],
+                price: 275,
+                numOfColors: 1,
+                description: "Nike Mercurial Superfly 8 Elite FG",
             },
             {
                 productId: 4,
                 imageList: ["/assets/images/products/NikeCourt_Air_Zoom_Vapor_Cage_4_1.png",
                     "/assets/images/products/NikeCourt_Air_Zoom_Vapor_Cage_4_2.png",
                     "/assets/images/products/NikeCourt_Air_Zoom_Vapor_Cage_4_3.png",
-                    "/assets/images/products/NikeCourt_Air_Zoom_Vapor_Cage_4_4.png"]
+                    "/assets/images/products/NikeCourt_Air_Zoom_Vapor_Cage_4_4.png"],
+                price: 150,
+                numOfColors: 1,
+                description: "NikeCourt Air Zoom Vapor Cage 4",
+
             },
             {
                 productId: 5,
                 imageList: ["/assets/images/products/Nike_Alpha_Huarache_Elite_3_Mid_1.png",
                     "/assets/images/products/Nike_Alpha_Huarache_Elite_3_Mid_2.png",
                     "/assets/images/products/Nike_Alpha_Huarache_Elite_3_Mid_3.png",
-                    "/assets/images/products/Nike_Alpha_Huarache_Elite_3_Mid_4.png"]
+                    "/assets/images/products/Nike_Alpha_Huarache_Elite_3_Mid_4.png"],
+                price: 95,
+                numOfColors: 1,
+                description: "Nike Alpha Huarache Elite 3 Mid",
             },
             {
                 productId: 6,
                 imageList: ["/assets/images/products/Nike_Air_Zoom_Pegasus_37_Premium_1.png",
                     "/assets/images/products/Nike_Air_Zoom_Pegasus_37_Premium_2.png",
                     "/assets/images/products/Nike_Air_Zoom_Pegasus_37_Premium_3.png",
-                    "/assets/images/products/Nike_Air_Zoom_Pegasus_37_Premium_4.png"]
+                    "/assets/images/products/Nike_Air_Zoom_Pegasus_37_Premium_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "Nike Air Zoom Pegasus 37 Premium",
             },
             {
                 productId: 7,
                 imageList: ["/assets/images/products/Nike_React_Infinity_Run_Flyknit_2_1.png",
                     "/assets/images/products/Nike_React_Infinity_Run_Flyknit_2_2.png",
                     "/assets/images/products/Nike_React_Infinity_Run_Flyknit_2_3.png",
-                    "/assets/images/products/Nike_React_Infinity_Run_Flyknit_2_4.png"]
+                    "/assets/images/products/Nike_React_Infinity_Run_Flyknit_2_4.png"],
+                price: 60,
+                numOfColors: 1,
+                description: "Nike React Infinity Run Flyknit 2",
             },
             {
                 productId: 8,
                 imageList: ["/assets/images/products/Nike_Dri_FIT_BRS_1.png",
                     "/assets/images/products/Nike_Dri_FIT_BRS_2.png",
                     "/assets/images/products/Nike_Dri_FIT_BRS_3.png",
-                    "/assets/images/products/Nike_Dri_FIT_BRS_4.png"]
+                    "/assets/images/products/Nike_Dri_FIT_BRS_4.png"],
+                price: 30,
+                numOfColors: 1,
+                description: "Nike Dri-FIT BRS",
             },
             {
                 productId: 9,
                 imageList: ["/assets/images/products/Nike_Sportswear_Tech_Fleece_1.png",
                     "/assets/images/products/Nike_Sportswear_Tech_Fleece_2.png",
                     "/assets/images/products/Nike_Sportswear_Tech_Fleece_3.png",
-                    "/assets/images/products/Nike_Sportswear_Tech_Fleece_4.png"]
+                    "/assets/images/products/Nike_Sportswear_Tech_Fleece_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 10,
                 imageList: ["/assets/images/products/Nike_Amp_Axis_1.png",
                     "/assets/images/products/Nike_Amp_Axis_2.png",
                     "/assets/images/products/Nike_Amp_Axis_3.png",
-                    "/assets/images/products/Nike_Amp_Axis_4.png"]
+                    "/assets/images/products/Nike_Amp_Axis_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 11,
                 imageList: ["/assets/images/products/Nike_Sportswear_Heritage_1.png",
                     "/assets/images/products/Nike_Sportswear_Heritage_2.png",
                     "/assets/images/products/Nike_Sportswear_Heritage_3.png",
-                    "/assets/images/products/Nike_Sportswear_Heritage_4.png"]
+                    "/assets/images/products/Nike_Sportswear_Heritage_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 12,
                 imageList: ["/assets/images/products/Mens_Crew_1.png",
                     "/assets/images/products/Mens_Crew_2.png",
                     "/assets/images/products/Mens_Crew_3.png",
-                    "/assets/images/products/Mens_Crew_4.png"]
+                    "/assets/images/products/Mens_Crew_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 13,
                 imageList: ["/assets/images/products/Nike_Standard_Issue_Rayguns_1.png",
                     "/assets/images/products/Nike_Standard_Issue_Rayguns_2.png",
                     "/assets/images/products/Nike_Standard_Issue_Rayguns_3.png",
-                    "/assets/images/products/Nike_Standard_Issue_Rayguns_4.png"]
+                    "/assets/images/products/Nike_Standard_Issue_Rayguns_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 14,
                 imageList: ["/assets/images/products/Nike_Yoga_1.png",
                     "/assets/images/products/Nike_Yoga_2.png",
                     "/assets/images/products/Nike_Yoga_3.png",
-                    "/assets/images/products/Nike_Yoga_4.png"]
+                    "/assets/images/products/Nike_Yoga_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 15,
                 imageList: ["/assets/images/products/Mens_Tank_1.png",
                     "/assets/images/products/Mens_Tank_2.png",
                     "/assets/images/products/Mens_Tank_3.png",
-                    "/assets/images/products/Mens_Tank_4.png"]
+                    "/assets/images/products/Mens_Tank_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 16,
                 imageList: ["/assets/images/products/Mens_Basketball_Jersey_1.png",
                     "/assets/images/products/Mens_Basketball_Jersey_2.png",
                     "/assets/images/products/Mens_Basketball_Jersey_3.png",
-                    "/assets/images/products/Mens_Basketball_Jersey_4.png"]
+                    "/assets/images/products/Mens_Basketball_Jersey_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             }, {
                 productId: 17,
                 imageList: ["/assets/images/products/Nike_Sportswear_NSW_1.png",
                     "/assets/images/products/Nike_Sportswear_NSW_2.png",
                     "/assets/images/products/Nike_Sportswear_NSW_3.png",
-                    "/assets/images/products/Nike_Sportswear_NSW_4.png"]
+                    "/assets/images/products/Nike_Sportswear_NSW_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 18,
                 imageList: ["/assets/images/products/Nike_Sportswear_Gym_Vintage_1.png",
                     "/assets/images/products/Nike_Sportswear_Gym_Vintage_2.png",
                     "/assets/images/products/Nike_Sportswear_Gym_Vintage_3.png",
-                    "/assets/images/products/Nike_Sportswear_Gym_Vintage_4.png"]
+                    "/assets/images/products/Nike_Sportswear_Gym_Vintage_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 19,
                 imageList: ["/assets/images/products/Nike_Yoga_Luxe_1.png",
                     "/assets/images/products/Nike_Yoga_Luxe_2.png",
                     "/assets/images/products/Nike_Yoga_Luxe_3.png",
-                    "/assets/images/products/Nike_Yoga_Luxe_4.png"]
+                    "/assets/images/products/Nike_Yoga_Luxe_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 20,
                 imageList: ["/assets/images/products/Nike_Epic_Luxe_1.png",
                     "/assets/images/products/Nike_Epic_Luxe_2.png",
                     "/assets/images/products/Nike_Epic_Luxe_3.png",
-                    "/assets/images/products/Nike_Epic_Luxe_4.png"]
+                    "/assets/images/products/Nike_Epic_Luxe_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 21,
                 imageList: ["/assets/images/products/Nike_Solid_Logo_1.png",
                     "/assets/images/products/Nike_Solid_Logo_2.png",
                     "/assets/images/products/Nike_Solid_Logo_3.png",
-                    "/assets/images/products/Nike_Solid_Logo_4.png"]
+                    "/assets/images/products/Nike_Solid_Logo_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 22,
                 imageList: ["/assets/images/products/Nike_T_Back_1.png",
                     "/assets/images/products/Nike_T_Back_2.png",
                     "/assets/images/products/Nike_T_Back_3.png",
-                    "/assets/images/products/Nike_T_Back_4.png"]
+                    "/assets/images/products/Nike_T_Back_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 23,
                 imageList: ["/assets/images/products/Nike_Bikini_1.png",
                     "/assets/images/products/Nike_Bikini_2.png",
                     "/assets/images/products/Nike_Bikini_3.png",
-                    "/assets/images/products/Nike_Bikini_4.png"]
+                    "/assets/images/products/Nike_Bikini_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 24,
                 imageList: ["/assets/images/products/Nike_Heritage_Swoosh_Fly_1.png",
                     "/assets/images/products/Nike_Heritage_Swoosh_Fly_2.png",
                     "/assets/images/products/Nike_Heritage_Swoosh_Fly_3.png",
-                    "/assets/images/products/Nike_Heritage_Swoosh_Fly_4.png"]
+                    "/assets/images/products/Nike_Heritage_Swoosh_Fly_4.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 25,
                 imageList: ["/assets/images/products/FC_Barcelona_Pitch_1.png",
-                    "/assets/images/products/FC_Barcelona_Pitch_2.png"
-                    ]
+                    "/assets/images/products/FC_Barcelona_Pitch_2.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             },
             {
                 productId: 26,
                 imageList: ["/assets/images/products/Nike_Vapor_Jet_6_1.png",
-                    "/assets/images/products/Nike_Vapor_Jet_6_2.png"
-                    ]
+                    "/assets/images/products/Nike_Vapor_Jet_6_2.png"],
+                price: 120,
+                numOfColors: 1,
+                description: "",
             }
         ]
     }

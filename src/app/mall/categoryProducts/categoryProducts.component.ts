@@ -21,15 +21,23 @@ export class CategoryProductsComponent {
 
     constructor(private categoryRepository: CategoryRepository, private productRepository: ProductRepository, activeRoute: ActivatedRoute, private router: Router) {
 
-        this.parentCategoryName = activeRoute.snapshot.url[1].path;
-
-       productRepository.getProducts().subscribe(list => {
-            this.productList = productRepository.getProductsByParentCategoryName(list, this.parentCategoryName);
+        this.router.events.subscribe((e: any) => {
+            this.parentCategoryName = activeRoute.snapshot.url[1].path;
+            this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
+            this.categoryList = categoryRepository.getChildCategories(this.parentCategoryName);
         });
 
-        categoryRepository.getParentCategories().subscribe(parentCategoryList => {
-            this.categoryList = categoryRepository.getChildCategories(parentCategoryList, this.parentCategoryName);
-        });
+        //productRepository.getProducts().subscribe( products => {
+        //    this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
+        //});
+        
+       //productRepository.getProducts().subscribe(list => {
+       //     this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
+       // });
+
+        //categoryRepository.getParentCategories().subscribe(parentCategoryList => {
+        //    this.categoryList = categoryRepository.getChildCategories(parentCategoryList, this.parentCategoryName);
+        //});
     }
     
     get productsInPage(): Product[] {
@@ -47,7 +55,7 @@ export class CategoryProductsComponent {
 
     getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): void {
         this.productRepository.getProducts().subscribe(productList => {
-            this.productList = this.productRepository.getProductsByParentCategoryNameAndChildCategoryId(productList, parentCategoryName, childCategoryId);
+            this.productList = this.productRepository.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
         });
     }
 }

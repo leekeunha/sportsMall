@@ -24,6 +24,9 @@ export class RestDataSource {
     private latestGarmentList = new Array<Product>();
     private bannerImageUrlList = [];
     private categoryList: Category[] = new Array();
+    private parentCategoryList: ParentCategory[] = new Array();
+    private productList : Product[];
+    private productDetailList: ProductDetail[];
 
     constructor(private http: HttpClient, @Inject(REST_URL) private url: string) {
 
@@ -34,6 +37,18 @@ export class RestDataSource {
 
             this.bannerList = home.bannerList;
             this.latestGarmentList = home.latestGarmentList;
+        });
+
+        this.getProducts().subscribe(productList => {
+            this.productList = productList;
+        });
+
+        this.getParentCategories().subscribe(parentCategoryList => {
+            this.parentCategoryList =parentCategoryList;
+        });
+
+        this.getProductDetailList().subscribe(productDetailList => {
+            this.productDetailList = productDetailList;
         });
     }
 
@@ -82,74 +97,68 @@ export class RestDataSource {
         });
     }
 
-    getProductsByParentCategoryName(productList: Product[], parentCategoryName: string): Product[] {
 
-        switch (parentCategoryName) {
-            case "shoes":
-                productList = this.filterProductsByParentCategoryId(productList, 1);
-                break;
-            case "tops":
-                productList = this.filterProductsByParentCategoryId(productList, 2);
-                break;
-            case "pants":
-                productList = this.filterProductsByParentCategoryId(productList, 3);
-                break;
-            case "swimwear":
-                productList = this.filterProductsByParentCategoryId(productList, 4);
-                break;
-            case "accesories":
-                productList = this.filterProductsByParentCategoryId(productList, 5);
-                break;
-            default:
-                break;
-        }
-        return productList;
-    }
-
-    getChildCategories(parentCategoryList: ParentCategory[], parentCategory: string): Category[] {
-
-        switch (parentCategory) {
-            case "shoes":
-                this.categoryList = this.findCategoriesByParentCategoryId(parentCategoryList, 1);
-                break;
-            case "tops":
-                this.categoryList = this.findCategoriesByParentCategoryId(parentCategoryList, 2);
-                break;
-            case "pants":
-                this.categoryList = this.findCategoriesByParentCategoryId(parentCategoryList, 3);
-                break;
-            case "swimwear":
-                this.categoryList = this.findCategoriesByParentCategoryId(parentCategoryList, 4);
-                break;
-            case "accesories":
-                this.categoryList = this.findCategoriesByParentCategoryId(parentCategoryList, 5);
-                break;
-            default:
-                break;
-        }
+    getChildCategories(parentCategoryName: string): Category[] {
+        const parentCategoryId: number = this.getParentCategoryId(parentCategoryName);
+        this.categoryList = this.findCategoriesByParentCategoryId(parentCategoryId);
         return this.categoryList;
     }
 
-    findCategoriesByParentCategoryId(parentCategoryList: ParentCategory[], parentCategoryId: number): Category[] {
-        const parentCategory: ParentCategory = parentCategoryList.find(p => p.id == parentCategoryId);
+    findCategoriesByParentCategoryId(parentCategoryId: number): Category[] {
+        const parentCategory: ParentCategory = this.parentCategoryList.find(p => p.id == parentCategoryId);
         return parentCategory.categoryList;
     }
 
-    filterProductsByParentCategoryId(productList: Product[], parentCategoryId: number): Product[] {
-        return productList.filter(p => p.parentCategoryId == parentCategoryId);
+    getParentCategoryId(parentCategoryName: string): number {
+
+        let parentCategoryId: number;
+        switch (parentCategoryName) {
+            case "shoes":
+                parentCategoryId = 1;
+                break;
+            case "tops":
+                parentCategoryId = 2;
+                break;
+            case "pants":
+                parentCategoryId = 3;
+                break;
+            case "swimwear":
+                parentCategoryId = 4;
+                break;
+            case "accesories":
+                parentCategoryId = 5;
+                break;
+            default:
+                break;
+        }
+        return parentCategoryId;
+    }
+
+    getProductsByParentCategoryName(parentCategoryName: string): Product[] {
+
+        const parentCategoryId: number = this.getParentCategoryId(parentCategoryName);
+        const productList: Product[] = this.getProductsByParentCategoryId(parentCategoryId);
+        
+        return productList;
     }
 
     getProduct(productList: Product[], productId: number): Product {
         return productList.find(p => productId == p.productId);
     }
 
-    getProductsByParentCategoryNameAndChildCategoryId(productList: Product[], parentCategoryName: string, childCategoryId: number): Product[] {
-        const products: Product[] = this.getProductsByParentCategoryName(productList, parentCategoryName)
+    getProductsByParentCategoryId(parentCategoryId: number): Product[]{
+        let filteredproducts:Product[];
+        filteredproducts = this.productList.filter(p => p.parentCategoryId == parentCategoryId);
+        return filteredproducts;
+    }
+
+    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): Product[] {
+        const products: Product[] = this.getProductsByParentCategoryName( parentCategoryName)
         return products.filter(p => p.categoryId == childCategoryId);
     }
 
-    getProductDetail(productDetailList: ProductDetail[], productId: number): ProductDetail {
-        return productDetailList.find(p => p.productId == productId);
+    getProductDetail(productId: number): ProductDetail {
+        return this.productDetailList.find(p => p.productId == productId);
     }
 
     saveOrder(order: Order): Observable<Order> {

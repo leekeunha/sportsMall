@@ -21,9 +21,7 @@ export class ProductDetailComponent {
         const productId: number = Number(activeRoute.snapshot.url[1].path);
 
         productDetailRepository.getProductDetailList().subscribe(detailList => {
-            
-            const productDetails: ProductDetail[] = detailList;
-            this.productDetail = productDetailRepository.getProductDetail(productDetails, productId);
+            this.productDetail = productDetailRepository.getProductDetail(productId);
             this.imgUrlList = this.productDetail.imageList;
         });
 
@@ -35,6 +33,5 @@ export class ProductDetailComponent {
     addProductToCart(product: Product) {
         this.cart.addLine(product);
         //toast 메시지 띄우기
-
     }
 }

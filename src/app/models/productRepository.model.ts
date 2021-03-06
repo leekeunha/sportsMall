@@ -22,12 +22,12 @@ export class ProductRepository {
         return this.dataSource.getSlideProductsList();
     }
 
-    getProductsByParentCategoryName(productList: Product[], parentCategoryName: string) {
-        return this.dataSource.getProductsByParentCategoryName(productList, parentCategoryName);
+    getProductsByParentCategoryName(parentCategoryName: string) {
+        return this.dataSource.getProductsByParentCategoryName(parentCategoryName);
     }
 
-    getProductsByParentCategoryNameAndChildCategoryId(productList: Product[], parentCategoryName: string, childCategoryId: number): Product[] {
-        return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(productList, parentCategoryName, childCategoryId);
+    getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName: string, childCategoryId: number): Product[] {
+        return this.dataSource.getProductsByParentCategoryNameAndChildCategoryId(parentCategoryName, childCategoryId);
     }
 
     getProduct(productList:Product[], productId: number) :Product{

@@ -14,8 +14,8 @@ export class ProductDetailRepository {
         return this.dataSource.getProductDetailList();
     }
 
-    getProductDetail(productDetailList: ProductDetail[], productId: number): ProductDetail {
-        return this.dataSource.getProductDetail(productDetailList, productId);
+    getProductDetail(productId: number): ProductDetail {
+        return this.dataSource.getProductDetail(productId);
     }
 
 }

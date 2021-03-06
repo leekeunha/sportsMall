@@ -7,11 +7,11 @@ import { CategoryProductsComponent } from './mall/categoryProducts/categoryProdu
 
 const routes: Routes = [
     { path: "", component: HomeComponent },
-    { path: "products/shoes", component: CategoryProductsComponent},
-    { path: "products/tops", component: CategoryProductsComponent},
-    { path: "products/pants", component: CategoryProductsComponent},
-    { path: "products/swimwear", component: CategoryProductsComponent },
-    { path: "products/accesories", component: CategoryProductsComponent},
+    { path: "products/:categoryName", component: CategoryProductsComponent},
+    { path: "products/:categoryName", component: CategoryProductsComponent},
+    { path: "products/:categoryName", component: CategoryProductsComponent},
+    { path: "products/:categoryName", component: CategoryProductsComponent },
+    { path: "products/:categoryName", component: CategoryProductsComponent},
     { path: "product/:id", component: ProductDetailComponent},
     { path: "cart", component: CartDetailComponent},
     { path: "checkout", component: CheckoutComponent},
