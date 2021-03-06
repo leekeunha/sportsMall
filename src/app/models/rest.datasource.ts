@@ -11,7 +11,7 @@ import { Order } from './order.model';
 
 export const REST_URL = new InjectionToken("rest_url");
 const HOME = "home";
-const PRODUCT_LIST = "productList";
+const PRODUCT_LIST = "productList"; 
 const PARENT_CATEGORY_LIST = "parentCategoryList";
 const PRODUCT_DETAIL_LIST = "productDetailList";
 
