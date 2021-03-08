@@ -13,7 +13,7 @@ import { Order } from './order.model';
     imports: [HttpClientModule],
     providers: [HomeRepository, CategoryRepository, ProductRepository, RestDataSource, ProductDetailRepository, Cart, Order, OrderRepository,
         {
-            provide: REST_URL, useValue: `http://${location.hostname}:3500`
+            provide: REST_URL, useValue: `https://sportsmallapi.herokuapp.com`
         }]
 })
 export class ModelModule { }
