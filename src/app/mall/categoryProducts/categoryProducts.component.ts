@@ -26,18 +26,6 @@ export class CategoryProductsComponent {
             this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
             this.categoryList = categoryRepository.getChildCategories(this.parentCategoryName);
         });
-
-        //productRepository.getProducts().subscribe( products => {
-        //    this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
-        //});
-        
-       //productRepository.getProducts().subscribe(list => {
-       //     this.productList = productRepository.getProductsByParentCategoryName(this.parentCategoryName);
-       // });
-
-        //categoryRepository.getParentCategories().subscribe(parentCategoryList => {
-        //    this.categoryList = categoryRepository.getChildCategories(parentCategoryList, this.parentCategoryName);
-        //});
     }
     
     get productsInPage(): Product[] {
